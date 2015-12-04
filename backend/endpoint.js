@@ -32,7 +32,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 
 app.get("/letter/:id",function(req,res){
-connection.query("SELECT * from letter WHERE letter = '" + req.params.id + "'; SELECT * from brick", function(err, rows, fields) {
+connection.query("SELECT * from letter WHERE letter = '" + req.params.id + "'; SELECT * from resources", function(err, rows, fields) {
 // connection.end();
   if (!err){
       var brick = rows[1][0].amount;
@@ -43,7 +43,7 @@ connection.query("SELECT * from letter WHERE letter = '" + req.params.id + "'; S
         var delta = brick - cost;
         plate = plate - 1;
         // res.send(rows);
-        connection.query("UPDATE brick set amount = "+ delta +" where id = 1; UPDATE brick set amount = " + plate +" where id = 2" , function(err, rows, fields) {
+        connection.query("UPDATE resources set amount = "+ delta +" where id = 1; UPDATE resources set amount = " + plate +" where id = 2" , function(err, rows, fields) {
         if (!err) {
           res.send(returnVal);
         }
@@ -59,8 +59,8 @@ connection.query("SELECT * from letter WHERE letter = '" + req.params.id + "'; S
   });
 });
 
-app.get("/brick",function(req,res){
-connection.query("SELECT * from brick", function(err, rows, fields) {
+app.get("/resources",function(req,res){
+connection.query("SELECT * from resources", function(err, rows, fields) {
 // connection.end();
   if (!err)
     res.send(rows);
@@ -69,19 +69,17 @@ connection.query("SELECT * from brick", function(err, rows, fields) {
   });
 });
 
-app.post("/brick",function(req,res){
+app.post("/resources",function(req,res){
     var type = req.body.type;
     var amount = req.body.amount;
-    console.log(type);
-    console.log(amount);
     var currentAmount = 0;
-    connection.query("SELECT amount from brick WHERE name = '"+ type +"'", function(err, rows, fields) {
+    connection.query("SELECT amount from resources WHERE name = '"+ type +"'", function(err, rows, fields) {
     // connection.end();
   if (!err){
     currentAmount = JSON.parse(rows[0].amount)+JSON.parse(amount);
-    connection.query("UPDATE brick SET amount = "+ currentAmount +" WHERE name ='" + type +"'", function(err, rows, fields) {
+    connection.query("UPDATE resources SET amount = "+ currentAmount +" WHERE name ='" + type +"'", function(err, rows, fields) {
       if (!err) {
-        var successMessage = "Adding " + amount + " bricks to " + type + " success";
+        var successMessage = "Adding " + amount + " " + type + "(s) success";
         res.send({message: successMessage});
         console.log(successMessage);
       }

@@ -18,14 +18,14 @@ let Login = React.createClass({
       letterDetails: {},
       loading: 'none',
       done: false,
-      brickType: "brick",
+      resType: "brick",
       loginStatus: DataStore.getLogin()
     }
   },
 
   componentDidMount () {
 
-    ProductAPI.getBrick();
+    ProductAPI.getRes();
      
     DataStore.addChangeListener(this._rerender);
   },
@@ -35,8 +35,8 @@ let Login = React.createClass({
   },
 
   _rerender() {
-    this.setState({brickDetails: DataStore.getProduct()});
-    if (this.state.brickDetails.message) this.refs.addSuccess.show();
+    this.setState({resDetails: DataStore.getProduct()});
+    if (this.state.resDetails.message) this.refs.addSuccess.show();
   },
 
   render() {
@@ -50,23 +50,23 @@ let Login = React.createClass({
         $("body").css("background-color", "#444F5C");
       });
 
-      // console.log(this.state.brickDetails);
+      // console.log(this.state.resDetails);
       var table = (<div></div>);
       // var response = this.state.letterDetails;
       var errorMessage = "Unspecified Error...";
       if (this.state.inputError) errorMessage = this.state.inputError;
       var successMessage ="Test";
 
-    if (this.state.brickDetails){
-    if (this.state.brickDetails.message) successMessage = this.state.brickDetails.message;
+    if (this.state.resDetails){
+    if (this.state.resDetails.message) successMessage = this.state.resDetails.message;
     var list = [];
-    for (let i = 0, len=this.state.brickDetails.length; i<len; i++){
+    for (let i = 0, len=this.state.resDetails.length; i<len; i++){
           list.push(<tr key={i+12345}>
                 <td >
-                  <b>{this.state.brickDetails[i].name}</b>
+                  <b>{this.state.resDetails[i].name}</b>
                 </td>
                 <td>
-                  {this.state.brickDetails[i].amount}
+                  {this.state.resDetails[i].amount}
                 </td>
               </tr>);
       }
@@ -131,10 +131,10 @@ let Login = React.createClass({
    _change(e, selectedIndex, menuItem) {
     var urlCurrent = encodeURIComponent(window.location.href);
     if (selectedIndex == 0) {
-      this.setState({brickType: "brick"});
+      this.setState({resType: "brick"});
     }
     if (selectedIndex == 1) {
-      this.setState({brickType: "plate"});
+      this.setState({resType: "plate"});
     }
   },
 
@@ -148,11 +148,11 @@ let Login = React.createClass({
       return;
     }
     var details = {
-      "type" : this.state.brickType,
+      "type" : this.state.resType,
       "amount" : amount
     }
 
-    ProductAPI.postBrick(details);
+    ProductAPI.postRes(details);
 
     // this.context.router.transitionTo('/advanced');
   }

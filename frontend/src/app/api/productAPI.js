@@ -28,7 +28,7 @@ var currentSearchXhr;
 
 var errorMessage = { error: "Unable to connect to API Server"}
 
-var host="http://192.168.1.101:8080";
+var host="http://localhost:8080";
 
 module.exports = {
 
@@ -64,10 +64,10 @@ module.exports = {
 	    }
 	},
 
-	postBrick: function(payload) {
+	postRes: function(payload) {
     	if (payload){
 	    	// var url = 'http://192.168.182.108:3000/auth/request-token';
-	    	var url = host+"/brick";
+	    	var url = host+"/resources";
 	    	var params = JSON.stringify(payload);
 	    	// console.log(params);
 	    	// console.log(payload);
@@ -80,7 +80,7 @@ module.exports = {
 			    	if (xhr.responseText){
 				    	var result = JSON.parse(xhr.responseText);
 				    	console.log(result);
-				        module.exports.getBrick(result);
+				        module.exports.getRes(result);
 				    }
 			    }
 			    else {
@@ -127,9 +127,9 @@ module.exports = {
 	    }
 	},
 
-	getBrick: function(payload) {
+	getRes: function(payload) {
     	// var url = 'http://192.168.182.108:3000/auth/request-token';
-    	var url = host+"/brick";
+    	var url = host+"/resources";
     	// console.log(payload);
 
 		xhr.open("GET", url, true);
