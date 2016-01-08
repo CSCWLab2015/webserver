@@ -9,12 +9,29 @@ var connection = mysql.createConnection({
   multipleStatements: true
 });
 var app = express();
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
+var btSerial = new (require('bluetooth-serial-port')).BluetoothSerialPort();
+var address = '00:16:53:15:38:61';
+var test = new Buffer('0a0080090006050103070909', 'hex');
+
+btSerial.findSerialPortChannel(address, function(channel) {
+
+    console.log("Connecting to "+ address);
+    btSerial.connect(address, channel, function() {
+        console.log(address+ ' connected');
+        
+    }, function (err) {
+        console.log(err);
+    });
+
+}, function() {
+    console.log('found nothing');
+});
 
 
 connection.connect(function(err){
 if(!err) {
-    console.log("Database is connected ... \n\n");  
+    console.log("INFO: Database is connected ...");  
 } else {
     console.log("Error connecting database ... \n\n");  
 }
@@ -60,13 +77,19 @@ connection.query("SELECT * from letter WHERE letter = '" + req.params.id + "'; S
 });
 
 app.get("/resources",function(req,res){
-connection.query("SELECT * from resources", function(err, rows, fields) {
-// connection.end();
-  if (!err)
-    res.send(rows);
-  else
-    throw err;
-  });
+  
+  btSerial.write(test, function(err, bytesWritten) {
+            if (err) console.log(err);
+        });
+
+  connection.query("SELECT * from resources", function(err, rows, fields) {
+  // connection.end();
+    if (!err)
+      res.send(rows);
+    else
+      throw err;
+    });
+
 });
 
 app.post("/resources",function(req,res){
