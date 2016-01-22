@@ -1,33 +1,78 @@
-var express    = require("express");
-var mysql      = require('mysql');
-var _ = require("lodash");
+var express    = require("express"),
+    mysql      = require('mysql'),
+    _          = require("lodash"),
+    bodyParser = require('body-parser'),
+    request = require('request');
+    // encoder    = require('./bluetooth/encoder.js'),
+    // btSerial   = new (require('bluetooth-serial-port')).BluetoothSerialPort();
+
+
 var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'root',
-  database : 'lego',
-  multipleStatements: true
-});
+    host     : 'localhost',
+    user     : 'root',
+    password : 'root',
+    database : 'lego',
+    multipleStatements: true
+  });
+
+var STATUS = {
+    800: "Status",
+    801: "Job Submitted",
+    802: "Job Started",
+    803: "Job Done",
+    810: "Printing*",
+    820: "Moving to printer",
+    821: "Moving to delivery warehouse",
+    830: "Loading",
+    831: "Unloading",
+    901: "Bluetooth communication error",
+    902: "Job could not be started",
+    910: "Brick is not available in the ware house to be used in printing",
+    911: "Brick is not picked up by the printer head from the bricks warehouse",
+    912: "Brick is not plugged to the plate (still in the head).",
+    913: "Brick is not plugged to the correct position on the plate"
+};
+
+// var ERROR = {
+//   error: "Error connecting to nxt device",
+//   message: ""
+// }
+
+// var address = '00:16:53:15:38:61';
+// var test = new Buffer('0a0080090006050103070909', 'hex');
+
 var app = express();
-var bodyParser = require('body-parser');
-var btSerial = new (require('bluetooth-serial-port')).BluetoothSerialPort();
-var address = '00:16:53:15:38:61';
-var test = new Buffer('0a0080090006050103070909', 'hex');
 
-btSerial.findSerialPortChannel(address, function(channel) {
+////////////////////////////
+//
+// Connecting to NXT Devices
+//
+////////////////////////////
 
-    console.log("Connecting to "+ address);
-    btSerial.connect(address, channel, function() {
-        console.log(address+ ' connected');
+// btSerial.findSerialPortChannel(address, function(channel) {
+
+//     btSerial.connect(address, channel, function() {
+//         console.log("INFO: "+ address+ ' connected');
         
-    }, function (err) {
-        console.log(err);
-    });
+//     }, function (err) {
+//         console.log(err);
+//     });
 
-}, function() {
-    console.log('found nothing');
-});
 
+// }, function() {
+//     console.log('found nothing');
+// });
+
+// btSerial.on('data', function(buffer) {
+//   // console.log(buffer);
+//   ERROR.message = buffer;
+// });
+
+////////////////////////////
+//
+// Connecting to Database Server
+//
+////////////////////////////
 
 connection.connect(function(err){
 if(!err) {
@@ -36,6 +81,14 @@ if(!err) {
     console.log("Error connecting database ... \n\n");  
 }
 });
+
+
+
+////////////////////////////
+//
+// Adding header of the API
+//
+////////////////////////////
 
 app.use(function(req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -48,21 +101,50 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 })); 
 
 
+
+////////////////////////////
+//
+// Express modules
+//
+////////////////////////////
+
+
 app.get("/letter/:id",function(req,res){
 connection.query("SELECT * from letter WHERE letter = '" + req.params.id + "'; SELECT * from resources", function(err, rows, fields) {
-// connection.end();
+
+  var brick = rows[1][0].amount,
+      plate = rows[1][1].amount,
+      cost = rows[0][0].cost,
+      returnVal = rows[0][0],
+      delta = brick - cost;
+
   if (!err){
-      var brick = rows[1][0].amount;
-      var plate = rows[1][1].amount;
-      var cost = rows[0][0].cost;
-      var returnVal = rows[0][0];
+
       if (brick > cost && plate > 0) {
-        var delta = brick - cost;
+        
         plate = plate - 1;
-        // res.send(rows);
+
         connection.query("UPDATE resources set amount = "+ delta +" where id = 1; UPDATE resources set amount = " + plate +" where id = 2" , function(err, rows, fields) {
         if (!err) {
-          res.send(returnVal);
+
+          returnVal.representation = parseInt(returnVal.representation, 2).toString(2);
+          returnVal.letter = returnVal.letter.toUpperCase();
+
+          request.post(
+              'http://localhost:9090/job',
+              { form: { 
+                  "type": "print",
+                  "letter": returnVal.letter
+                } 
+              },
+              function (error, response, body) {
+                  if (!error && response.statusCode == 200) {
+                      res.send(returnVal);
+                  }
+              }
+          );
+
+          
         }
         else res.send(err);});
         return;
@@ -77,13 +159,9 @@ connection.query("SELECT * from letter WHERE letter = '" + req.params.id + "'; S
 });
 
 app.get("/resources",function(req,res){
-  
-  btSerial.write(test, function(err, bytesWritten) {
-            if (err) console.log(err);
-        });
 
   connection.query("SELECT * from resources", function(err, rows, fields) {
-  // connection.end();
+  
     if (!err)
       res.send(rows);
     else
@@ -128,6 +206,16 @@ app.post("/login",function(req,res){
     throw err;
   });
     // console.log(currentAmount);
+});
+
+app.post("/status",function(req,res){
+    var method = req.body.method;
+    var payload = req.body.payload;
+    var timestamp = req.body.timestamp;
+
+    console.log("INFO: ", timestamp, STATUS[method], payload);
+
+    res.send(STATUS[method]);
 });
 
 app.listen(8080);
