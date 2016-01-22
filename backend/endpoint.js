@@ -128,7 +128,6 @@ connection.query("SELECT * from letter WHERE letter = '" + req.params.id + "'; S
         if (!err) {
 
           returnVal.representation = parseInt(returnVal.representation, 2).toString(2);
-          returnVal.letter = returnVal.letter.toUpperCase();
 
           request.post(
               'http://localhost:9090/job',
