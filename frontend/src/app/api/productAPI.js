@@ -28,7 +28,7 @@ var currentSearchXhr;
 
 var errorMessage = { error: "Unable to connect to API Server"}
 
-var host="http://localhost:8080";
+var host="http://10.223.90.122:8080";
 
 module.exports = {
 
@@ -94,6 +94,8 @@ module.exports = {
 
 	getLetter: function(payload) {
     	if (payload){
+    		ProductActions.receiveStatus("");
+
 	    	var url = host+"/letter/"+payload;
 
 			xhr.open("GET", url, true);
@@ -158,6 +160,7 @@ module.exports = {
 			    	if (xhr.responseText){
 				    	var result = JSON.parse(xhr.responseText);
 				    	ProductActions.receiveStatus(result);
+				    	if (result.code == 803) ProductActions.receiveProduct({done: true});
 				    }
 			    }
 			    else {
@@ -170,7 +173,7 @@ module.exports = {
 			xhr.send();
 
 
-		}, 800);
+		}, 1000);
 
 	}
 

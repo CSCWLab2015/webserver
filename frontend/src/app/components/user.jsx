@@ -61,14 +61,18 @@ let User = React.createClass({
         <p style={{marginTop: '40px', fontSize: '12px'}}>Your request is being processed, here is the expected result</p>
         <img src={response.urlImage} alt="getcontext" width="200px" />
       </div>
-    );
+    ); 
 
     if (status.method) statusSection = (
       <div>
-        <p style={{marginTop: '40px', fontSize: '16px', fontWeight: '600'}}>Status:</p>
-        <p style={{marginTop: '10px', fontSize: '12px'}}>{status.method}</p>
+        <p style={{marginTop: '40px', fontSize: '20px', fontWeight: '600'}}>Status:</p>
+        <p style={{marginTop: '5px', fontSize: '16px'}}>{status.method}</p>
       </div>
     );
+
+    if (response.done) {
+      image ="";
+    }
 
     let textFieldStyle = {
       display: 'block', 

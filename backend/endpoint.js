@@ -39,7 +39,7 @@ var STATUS = {
           },
     803: {
           info: "waiting",
-          message: "Job Done"
+          message: "Job Done, please check the plate..."
           },
     810: {
           info: "printing",
@@ -159,6 +159,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 app.get("/letter/:id",function(req,res){
   var letter = req.params.id.toUpperCase();
+  RESPONSE = {};
 
   // console.log(letter);
 
