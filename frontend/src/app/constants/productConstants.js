@@ -7,7 +7,6 @@ module.exports = keyMirror({
   PRODUCT_VISIBLE: null,   // Shows or hides the cart
   SET_SELECTED: null,   // Selects a product option
   RECEIVE_DATA: null,    // Loads our mock data
-  RECEIVE_TAG: null,
-  RECEIVE_LOCATION: null,
-  RECEIVE_USER: null
+  RECEIVE_USER: null,
+  RECEIVE_STATUS: null
 });

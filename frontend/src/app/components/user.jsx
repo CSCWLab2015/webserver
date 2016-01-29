@@ -8,7 +8,7 @@ let DataStore = require('../stores/dataStore');
 let ProductAPI = require('../api/productAPI');
 
 let {
-  TextField, Paper, RaisedButton, Snackbar, CircularProgress, Checkbox
+  TextField, Paper, RaisedButton, Snackbar, CircularProgress,
 } = mui;
 
 let User = React.createClass({
@@ -16,13 +16,14 @@ let User = React.createClass({
   getInitialState () {
     return { 
       letterDetails: {},
+      status: {},
       done: false,
       loginStatus: DataStore.getLogin()
     }
   },
 
   componentDidMount () {
-     
+    ProductAPI.getStatus();
     DataStore.addChangeListener(this._rerender);
   },
 
@@ -31,35 +32,43 @@ let User = React.createClass({
   },
 
   _rerender() {
-    this.setState({letterDetails: DataStore.getProduct()});
+    this.setState({letterDetails: DataStore.getProduct(), status: DataStore.getStatus()});
     if (this.state.letterDetails.error) this.refs.errorAlert.show();
   },
 
   render() {
+    var returnVar = (<div></div>);
+    var image ="";
+    var statusSection ="";
+    var errorMessage = "Unspecified Error!";
+    var response = this.state.letterDetails;
+    var status = this.state.status;
 
     if (this.state.loginStatus.role == 'maintainer') this.context.router.transitionTo('/admin');
-    var returnVar = (<div></div>);
 
-      $(document).ready(function() {
-        $("body").css("background-color", "#444F5C");
-      });
+    $(document).ready(function() {
+      $("body").css("background-color", "#444F5C");
+    });
 
-      // console.log(this.state.letterDetails);
-      var response = this.state.letterDetails;
+    if (this.state.inputError) errorMessage = this.state.inputError;
+    
+    var response = this.state.letterDetails;
+    
+    if (response.error) errorMessage = response.error;
 
-      console.log(response);
+    if (response.urlImage) image = (
+      <div>
+        <p style={{marginTop: '40px', fontSize: '12px'}}>Your request is being processed, here is the expected result</p>
+        <img src={response.urlImage} alt="getcontext" width="200px" />
+      </div>
+    );
 
-      var errorMessage = "Unspecified Error!";
-      if (this.state.inputError) errorMessage = this.state.inputError;
-      if (response.error) errorMessage = response.error;
-
-      var image ="";
-
-      if (response.urlImage) image = (
-        <div>
-          <p style={{marginTop: '40px', fontSize: '12px'}}>Your request is being processed, here is the expected result</p>
-          <img src={response.urlImage} alt="getcontext" width="200px" />
-        </div>);
+    if (status.method) statusSection = (
+      <div>
+        <p style={{marginTop: '40px', fontSize: '16px', fontWeight: '600'}}>Status:</p>
+        <p style={{marginTop: '10px', fontSize: '12px'}}>{status.method}</p>
+      </div>
+    );
 
     let textFieldStyle = {
       display: 'block', 
@@ -83,6 +92,7 @@ let User = React.createClass({
             <RaisedButton label="Submit" type="submit" primary={true} />
             <br />
             {image}
+            {statusSection}
             </div>
             </form>
           </Paper>

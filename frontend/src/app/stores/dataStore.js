@@ -8,7 +8,7 @@ let cookie = require('react-cookie');
 // Define initial data points
 let _product = {};
 let _tag = {};
-let _fingerprint = {};
+let _status = {};
 let _location = {};
 let _user = {};
 
@@ -19,16 +19,10 @@ function loadProductData(data) {
 
 function loadTag(data) {
   _tag = data;
-  // console.log(data);
 }
 
-function loadFP(data) {
-  _fingerprint = data;
-}
-
-function loadLocation(data) {
-  _location = data;
-  // console.log(data);
+function loadStatus(data) {
+  _status = data;
 }
 
 function loadUser(data) {
@@ -36,7 +30,6 @@ function loadUser(data) {
     cookie.save('dat_role', data.role);
     cookie.save('is_loggedin', true);
     _user = {};
-    // console.log(data);
   }
   else _user = data;
 }
@@ -48,15 +41,13 @@ let ProductStore = _.extend({}, EventEmitter.prototype, {
   getProduct: function() {
     return _product;
   },
-  getTag: function() {
-    return _tag;
-  },
-  getLocation: function() {
-    return _location;
-  },
 
   getUser: function() {
     return _user;
+  },
+
+  getStatus: function() {
+    return _status;
   },
 
   getLogin: function() {
@@ -105,20 +96,16 @@ AppDispatcher.register(function(payload) {
       loadProductData(action.data);
       break;
 
-    case ProductConstants.RECEIVE_TAG:
-      loadTag(action.data);
-      break;
-
-    case ProductConstants.RECEIVE_FP:
-      loadFP(action.data);
-    break;
-
     case ProductConstants.RECEIVE_LOCATION:
       loadLocation(action.data);
       break;
 
     case ProductConstants.RECEIVE_USER:
       loadUser(action.data);
+      break;
+
+    case ProductConstants.RECEIVE_STATUS:
+      loadStatus(action.data);
       break;
 
     default:

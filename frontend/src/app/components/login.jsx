@@ -8,7 +8,7 @@ let DataStore = require('../stores/dataStore');
 let ProductAPI = require('../api/productAPI');
 
 let {
-  TextField, Paper, RaisedButton, Snackbar, CircularProgress, Checkbox
+  TextField, Paper, RaisedButton, Snackbar, CircularProgress,
 } = mui;
 
 let Login = React.createClass({
@@ -94,10 +94,6 @@ let Login = React.createClass({
   _handleSubmit(e) {
     e.preventDefault();
     this.setState({ loading: 'inline'});
-    // if (this.props.query.signup) {
-    //   this.context.router.transitionTo('/login');
-    //   return;
-    // }
     var details = {
       "username" : this.refs.username.getValue(),
       "password" : this.refs.password.getValue()

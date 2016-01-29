@@ -1,0 +1,232 @@
+INFO: Database is connected ...
+INFO: Job sent successfully
+FATAL: Unable to connect to ROUTER
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: Database is connected ...
+INFO: Job sent successfully
+FATAL: Unable to connect to ROUTER
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+FATAL: Unable to connect to ROUTER
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Job sent successfully
+FATAL: Unable to connect to ROUTER
+INFO: 
+INFO: 
+INFO: 
+INFO: Database is connected ...
+INFO: Job sent successfully
+FATAL: Unable to connect to ROUTER
+INFO: 02:36:18 GMT+0100 (CET)Job Submitted0
+INFO: 02:36:21 GMT+0100 (CET)Job Started0
+INFO: 02:36:24 GMT+0100 (CET)Loading0
+INFO: 02:36:27 GMT+0100 (CET)Moving to printer0
+INFO: 02:36:29 GMT+0100 (CET)Printing*0
+INFO: 02:36:31 GMT+0100 (CET)Printing*1
+INFO: 02:36:33 GMT+0100 (CET)Printing*2
+INFO: 02:36:35 GMT+0100 (CET)Printing*3
+INFO: 02:36:37 GMT+0100 (CET)Printing*4
+INFO: 02:36:39 GMT+0100 (CET)Printing*5
+INFO: 02:36:41 GMT+0100 (CET)Printing*6
+INFO: 02:36:43 GMT+0100 (CET)Printing*7
+INFO: 02:36:45 GMT+0100 (CET)Printing*8
+INFO: 02:36:47 GMT+0100 (CET)Printing*9
+INFO: 02:36:49 GMT+0100 (CET)Printing*10
+INFO: 02:36:49 GMT+0100 (CET)Brick is not picked up by the printer head from the bricks warehouse10
+INFO: 02:36:51 GMT+0100 (CET)Brick is not plugged to the plate (still in the head).10
+INFO: 02:36:53 GMT+0100 (CET)Brick is not plugged to the correct position on the plate10
+INFO: 02:36:57 GMT+0100 (CET)Printing*11
+INFO: 02:36:59 GMT+0100 (CET)Printing*12
+INFO: 02:37:01 GMT+0100 (CET)Printing*13
+INFO: 02:37:03 GMT+0100 (CET)Printing*14
+INFO: 02:37:06 GMT+0100 (CET)Printing*15
+INFO: 02:37:08 GMT+0100 (CET)Printing*16
+INFO: 02:37:10 GMT+0100 (CET)Printing*17
+INFO: 02:37:12 GMT+0100 (CET)Printing*18
+INFO: 02:37:14 GMT+0100 (CET)Printing*19
+INFO: 02:37:16 GMT+0100 (CET)Printing*20
+INFO: 02:37:16 GMT+0100 (CET)Brick is not picked up by the printer head from the bricks warehouse20
+INFO: 02:37:18 GMT+0100 (CET)Brick is not plugged to the plate (still in the head).20
+INFO: 02:37:20 GMT+0100 (CET)Brick is not plugged to the correct position on the plate20
+INFO: 02:37:24 GMT+0100 (CET)Printing*21
+INFO: 02:37:26 GMT+0100 (CET)Printing*22
+INFO: 02:37:28 GMT+0100 (CET)Printing*23
+INFO: 02:37:30 GMT+0100 (CET)Printing*24
+INFO: 02:37:33 GMT+0100 (CET)Moving to delivery warehouse0
+INFO: 02:37:36 GMT+0100 (CET)Unloading0
+INFO: 02:37:39 GMT+0100 (CET)Job Done0
+FATAL: Unable to connect to ROUTER
+FATAL: Unable to connect to ROUTER
+INFO: Database is connected ...
+INFO: Job sent successfully
+FATAL: Unable to connect to ROUTER
+INFO: Database is connected ...
+INFO: Job sent successfully
+FATAL: Unable to connect to ROUTER
+INFO: 02:43:06 GMT+0100 (CET) Job Submitted 0
+INFO: 02:43:09 GMT+0100 (CET) Job Started 0
+INFO: 02:43:12 GMT+0100 (CET) Loading 0
+INFO: 02:43:15 GMT+0100 (CET) Moving to printer 0
+INFO: 02:43:17 GMT+0100 (CET) Printing* 0
+INFO: 02:43:19 GMT+0100 (CET) Printing* 1
+INFO: 02:43:21 GMT+0100 (CET) Printing* 2
+INFO: 02:43:23 GMT+0100 (CET) Printing* 3
+INFO: 02:43:25 GMT+0100 (CET) Printing* 4
+INFO: 02:43:27 GMT+0100 (CET) Printing* 5
+INFO: 02:43:29 GMT+0100 (CET) Printing* 6
+INFO: 02:43:31 GMT+0100 (CET) Printing* 7
+INFO: 02:43:33 GMT+0100 (CET) Printing* 8
+INFO: 02:43:35 GMT+0100 (CET) Printing* 9
+INFO: 02:43:37 GMT+0100 (CET) Printing* 10
+ERROR: 02:43:37 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 10
+ERROR: 02:43:39 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 10
+ERROR: 02:43:41 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 10
+INFO: 02:43:45 GMT+0100 (CET) Printing* 11
+INFO: 02:43:47 GMT+0100 (CET) Printing* 12
+INFO: 02:43:49 GMT+0100 (CET) Printing* 13
+INFO: 02:43:51 GMT+0100 (CET) Printing* 14
+INFO: 02:43:53 GMT+0100 (CET) Printing* 15
+INFO: 02:43:55 GMT+0100 (CET) Printing* 16
+INFO: 02:43:57 GMT+0100 (CET) Printing* 17
+INFO: 02:43:59 GMT+0100 (CET) Printing* 18
+INFO: 02:44:01 GMT+0100 (CET) Printing* 19
+INFO: 02:44:03 GMT+0100 (CET) Printing* 20
+ERROR: 02:44:03 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 20
+ERROR: 02:44:05 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 20
+ERROR: 02:44:07 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 20
+INFO: 02:44:11 GMT+0100 (CET) Printing* 21
+INFO: 02:44:13 GMT+0100 (CET) Printing* 22
+INFO: 02:44:15 GMT+0100 (CET) Printing* 23
+INFO: 02:44:17 GMT+0100 (CET) Printing* 24
+INFO: 02:44:20 GMT+0100 (CET) Moving to delivery warehouse 0
+INFO: 02:44:23 GMT+0100 (CET) Unloading 0
+INFO: 02:44:26 GMT+0100 (CET) Job Done 0
+INFO: Database is connected ...
+INFO: Job sent successfully
+FATAL: Unable to connect to ROUTER
+INFO: 02:44:51 GMT+0100 (CET) Job Submitted 0
+INFO: 02:44:55 GMT+0100 (CET) Job Started 0
+INFO: 02:44:58 GMT+0100 (CET) Loading 0
+INFO: 02:45:01 GMT+0100 (CET) Moving to printer 0
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: Database is connected ...
+FATAL: Unable to connect to ROUTER
+INFO: Database is connected ...
+INFO: Job sent successfully
+FATAL: Unable to connect to ROUTERError: write after end
+INFO: 02:51:58 GMT+0100 (CET) Job Submitted 0
+INFO: 02:52:01 GMT+0100 (CET) Job Started 0
+INFO: 02:52:04 GMT+0100 (CET) Loading 0
+INFO: 02:52:07 GMT+0100 (CET) Moving to printer 0
+INFO: 02:52:09 GMT+0100 (CET) Printing* 0
+INFO: 02:52:11 GMT+0100 (CET) Printing* 1
+INFO: 02:52:13 GMT+0100 (CET) Printing* 2
+INFO: 02:52:15 GMT+0100 (CET) Printing* 3
+INFO: 02:52:17 GMT+0100 (CET) Printing* 4
+INFO: 02:52:19 GMT+0100 (CET) Printing* 5
+INFO: 02:52:21 GMT+0100 (CET) Printing* 6
+INFO: 02:52:23 GMT+0100 (CET) Printing* 7
+INFO: 02:52:25 GMT+0100 (CET) Printing* 8
+INFO: 02:52:27 GMT+0100 (CET) Printing* 9
+INFO: 02:52:29 GMT+0100 (CET) Printing* 10
+ERROR: 02:52:29 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 10
+ERROR: 02:52:31 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 10
+ERROR: 02:52:33 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 10
+INFO: 02:52:37 GMT+0100 (CET) Printing* 11
+INFO: 02:52:39 GMT+0100 (CET) Printing* 12
+INFO: 02:52:41 GMT+0100 (CET) Printing* 13
+INFO: 02:52:43 GMT+0100 (CET) Printing* 14
+INFO: 02:52:45 GMT+0100 (CET) Printing* 15
+INFO: 02:52:47 GMT+0100 (CET) Printing* 16
+INFO: 02:52:49 GMT+0100 (CET) Printing* 17
+INFO: 02:52:51 GMT+0100 (CET) Printing* 18
+INFO: 02:52:53 GMT+0100 (CET) Printing* 19
+INFO: 02:52:55 GMT+0100 (CET) Printing* 20
+ERROR: 02:52:55 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 20
+ERROR: 02:52:57 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 20
+ERROR: 02:52:59 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 20
+INFO: 02:53:03 GMT+0100 (CET) Printing* 21
+INFO: 02:53:05 GMT+0100 (CET) Printing* 22
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Job sent successfully
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+INFO: 02:54:09 GMT+0100 (CET) Job Submitted 0
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+INFO: 02:54:12 GMT+0100 (CET) Job Started 0
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+INFO: Database is connected ...
+INFO: Job sent successfully
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: write after end
+FATAL: Unable to connect to ROUTERError: connect ECONNREFUSED 127.0.0.1:9090
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 02:55:01 GMT+0100 (CET) Job Submitted 0
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 02:55:29 GMT+0100 (CET) Job Submitted 0
+INFO: 02:55:32 GMT+0100 (CET) Job Started 0

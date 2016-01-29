@@ -35,10 +35,8 @@ module.exports = {
 
 	login: function(payload) {
     	if (payload){
-	    	// var url = 'http://192.168.182.108:3000/auth/request-token';
 	    	var url = host+"/login";
 	    	payload.password = sha1(payload.password);
-	    	// console.log(payload);
 	    	var params = JSON.stringify(payload);
 
 			xhr.open("POST", url, true);
@@ -66,11 +64,8 @@ module.exports = {
 
 	postRes: function(payload) {
     	if (payload){
-	    	// var url = 'http://192.168.182.108:3000/auth/request-token';
 	    	var url = host+"/resources";
 	    	var params = JSON.stringify(payload);
-	    	// console.log(params);
-	    	// console.log(payload);
 
 			xhr.open("POST", url, true);
 			xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
@@ -99,14 +94,9 @@ module.exports = {
 
 	getLetter: function(payload) {
     	if (payload){
-	    	// var url = 'http://192.168.182.108:3000/auth/request-token';
 	    	var url = host+"/letter/"+payload;
-	    	// console.log(payload);
 
 			xhr.open("GET", url, true);
-			// xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
-			// xhr.setRequestHeader("Authorization", "Bearer "+payload);
-
 			xhr.onreadystatechange = function() {//Call a function when the state changes.
 			    if(xhr.status == 200) {
 			    	if (xhr.responseText){
@@ -128,13 +118,9 @@ module.exports = {
 	},
 
 	getRes: function(payload) {
-    	// var url = 'http://192.168.182.108:3000/auth/request-token';
     	var url = host+"/resources";
-    	// console.log(payload);
 
 		xhr.open("GET", url, true);
-		// xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
-		// xhr.setRequestHeader("Authorization", "Bearer "+payload);
 
 		xhr.onreadystatechange = function() {//Call a function when the state changes.
 		    if(xhr.status == 200) {
@@ -158,6 +144,34 @@ module.exports = {
 		xhr.send();
 
     
+	},
+
+	getStatus: function(payload) {
+		setInterval(function(){
+
+	    	var url = host+"/status";
+
+			xhr.open("GET", url, true);
+
+			xhr.onreadystatechange = function() {//Call a function when the state changes.
+			    if(xhr.status == 200) {
+			    	if (xhr.responseText){
+				    	var result = JSON.parse(xhr.responseText);
+				    	ProductActions.receiveStatus(result);
+				    }
+			    }
+			    else {
+			    	if (xhr.responseText){
+				    	var error = JSON.parse(xhr.responseText);
+				    }
+			    }
+			}
+
+			xhr.send();
+
+
+		}, 800);
+
 	}
 
 };

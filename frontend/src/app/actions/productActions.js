@@ -14,21 +14,6 @@ let ProductActions = {
     // console.log(data);
   },
 
-  receiveTag: function(data) {
-    AppDispatcher.handleAction({
-      actionType: ProductConstants.RECEIVE_TAG,
-      data: data
-    })
-  },
-
-  receiveFP: function(data) {
-    AppDispatcher.handleAction({
-      actionType: ProductConstants.RECEIVE_FP,
-      data: data
-    })
-    // console.log(data);
-  },
-
   receiveLocation: function(data) {
 
     AppDispatcher.handleAction({
@@ -41,6 +26,14 @@ let ProductActions = {
   receiveUser: function(data) {
     AppDispatcher.handleAction({
       actionType: ProductConstants.RECEIVE_USER,
+      data: data
+    })
+    // console.log(data);
+  },
+
+  receiveStatus: function(data) {
+    AppDispatcher.handleAction({
+      actionType: ProductConstants.RECEIVE_STATUS,
       data: data
     })
     // console.log(data);

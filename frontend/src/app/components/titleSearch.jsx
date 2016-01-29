@@ -31,7 +31,7 @@ let TitleSearch = React.createClass({
   },
 
   render() {
-    if (!this.state.loginStatus.status) this.context.router.transitionTo('/login');
+    // if (!this.state.loginStatus.status) this.context.router.transitionTo('/login');
 
      var menuList = [      
       { route: 'logout', text: 'Logout'},

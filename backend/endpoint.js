@@ -1,11 +1,18 @@
 var express    = require("express"),
-    mysql      = require('mysql'),
+    mysql      = require("mysql"),
     _          = require("lodash"),
-    bodyParser = require('body-parser'),
-    request = require('request');
-    // encoder    = require('./bluetooth/encoder.js'),
-    // btSerial   = new (require('bluetooth-serial-port')).BluetoothSerialPort();
+    bodyParser = require("body-parser"),
+    http       = require("http");
 
+var options = {
+  host: 'localhost',
+  port: '9090',
+  path: '/job',
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  }
+};
 
 var connection = mysql.createConnection({
     host     : 'localhost',
@@ -33,40 +40,33 @@ var STATUS = {
     913: "Brick is not plugged to the correct position on the plate"
 };
 
-// var ERROR = {
-//   error: "Error connecting to nxt device",
-//   message: ""
-// }
+var ROUTER = {
+  host: "http://localhost:9090",
+  job: "/job",
+  status: "/status"
+}
 
-// var address = '00:16:53:15:38:61';
-// var test = new Buffer('0a0080090006050103070909', 'hex');
-
+var RESPONSE;
 var app = express();
 
-////////////////////////////
-//
-// Connecting to NXT Devices
-//
-////////////////////////////
 
-// btSerial.findSerialPortChannel(address, function(channel) {
+var fs = require('fs');
+var util = require('util');
+var log_file = fs.createWriteStream(__dirname + '/debug.log', {flags : 'a'});
+var log_stdout = process.stdout;
 
-//     btSerial.connect(address, channel, function() {
-//         console.log("INFO: "+ address+ ' connected');
-        
-//     }, function (err) {
-//         console.log(err);
-//     });
+console.log = function(d) { //
+  log_file.write(util.format(d) + '\n');
+  log_stdout.write(util.format(d) + '\n');
+};
 
+var request = http.request(options, function(response) {
+    console.log("INFO: Job sent successfully");
+});
+request.on('error', function(err) {
+    console.log("FATAL: Unable to connect to ROUTER" + err);
+});
 
-// }, function() {
-//     console.log('found nothing');
-// });
-
-// btSerial.on('data', function(buffer) {
-//   // console.log(buffer);
-//   ERROR.message = buffer;
-// });
 
 ////////////////////////////
 //
@@ -110,13 +110,20 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 
 app.get("/letter/:id",function(req,res){
-connection.query("SELECT * from letter WHERE letter = '" + req.params.id + "'; SELECT * from resources", function(err, rows, fields) {
+  var letter = req.params.id.toUpperCase();
+
+  // console.log(letter);
+
+  connection.query("SELECT * from letter WHERE letter = '" + letter + "'; SELECT * from resources", function(err, rows, fields) {
+
+    // console.log(rows);
 
   var brick = rows[1][0].amount,
       plate = rows[1][1].amount,
       cost = rows[0][0].cost,
       returnVal = rows[0][0],
-      delta = brick - cost;
+      delta = brick - cost,
+      payload;
 
   if (!err){
 
@@ -128,22 +135,16 @@ connection.query("SELECT * from letter WHERE letter = '" + req.params.id + "'; S
         if (!err) {
 
           returnVal.representation = parseInt(returnVal.representation, 2).toString(2);
+          res.send(returnVal);
 
-          request.post(
-              'http://localhost:9090/job',
-              { form: { 
-                  "type": "print",
-                  "letter": returnVal.letter
-                } 
-              },
-              function (error, response, body) {
-                  if (!error && response.statusCode == 200) {
-                      res.send(returnVal);
-                  }
-              }
-          );
 
-          
+          var payload = {
+            "type": "print",
+            "letter": returnVal.letter
+          };
+
+          request.write(JSON.stringify(payload), function(err) {request.end();});
+
         }
         else res.send(err);});
         return;
@@ -208,13 +209,26 @@ app.post("/login",function(req,res){
 });
 
 app.post("/status",function(req,res){
-    var method = req.body.method;
+    var method = req.body.method.toString();
     var payload = req.body.payload;
-    var timestamp = req.body.timestamp;
+    var timestamp = Math.round(req.body.time/1000000);
 
-    console.log("INFO: ", timestamp, STATUS[method], payload);
+    RESPONSE = {
+      "method": STATUS[method],
+      "payload": payload,
+      "timestamp": timestamp
+    };
+
+    timestamp = new Date(timestamp).toTimeString();
+
+    if (method.substring(0, 1) == "9") console.log("ERROR: " + timestamp + " " + STATUS[method] + " " + payload);
+    else console.log("INFO: " + timestamp + " " + STATUS[method] + " " + payload);
 
     res.send(STATUS[method]);
+});
+
+app.get("/status",function(req,res){
+  res.send(RESPONSE);
 });
 
 app.listen(8080);

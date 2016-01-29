@@ -69,16 +69,13 @@ let Main = React.createClass({
 
   render() {
 
-    // console.log("render");
-
-    // if (!this.state.loginStatus) this.context.router.transitionTo('/login');
-
-    // console.log(this.state.loginStatus);
+    if (!this.state.loginStatus) this.context.router.transitionTo('/login');
 
     let standardActions = [
-  { text: 'Cancel' },
-  { text: 'Submit', onTouchTap: this._onDialogSubmit, ref: 'submit'}
-];
+      { text: 'Cancel' },
+      { text: 'Submit', onTouchTap: this._onDialogSubmit, ref: 'submit'}
+    ];
+    
     return (
 
       <div>
@@ -97,7 +94,7 @@ let Main = React.createClass({
   },
 
   _rerender() {
-    this.setState({tagList: DataStore.getTag(), loginStatus: DataStore.getLogin()});
+    this.setState({loginStatus: DataStore.getLogin()});
     // if (this.state.rowData.error) this.refs.errorAlert.show();
   }
 
