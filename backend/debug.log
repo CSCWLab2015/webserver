@@ -230,3 +230,338 @@ INFO: Database is connected ...
 INFO: Job sent successfully
 INFO: 02:55:29 GMT+0100 (CET) Job Submitted 0
 INFO: 02:55:32 GMT+0100 (CET) Job Started 0
+FATAL: Unable to connect to ROUTERError: connect ECONNREFUSED 127.0.0.1:9090
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 09:34:28 GMT+0100 (CET) Job Submitted 0
+INFO: 09:34:31 GMT+0100 (CET) Job Started 0
+INFO: 09:34:34 GMT+0100 (CET) Loading 0
+INFO: 09:34:37 GMT+0100 (CET) Moving to printer 0
+INFO: 09:34:39 GMT+0100 (CET) Printing* 0
+INFO: 09:34:41 GMT+0100 (CET) Printing* 1
+INFO: 09:34:43 GMT+0100 (CET) Printing* 2
+INFO: 09:34:45 GMT+0100 (CET) Printing* 3
+INFO: 09:34:47 GMT+0100 (CET) Printing* 4
+INFO: 09:34:49 GMT+0100 (CET) Printing* 5
+INFO: 09:34:51 GMT+0100 (CET) Printing* 6
+INFO: 09:34:53 GMT+0100 (CET) Printing* 7
+INFO: 09:34:55 GMT+0100 (CET) Printing* 8
+INFO: 09:34:57 GMT+0100 (CET) Printing* 9
+INFO: 09:34:59 GMT+0100 (CET) Printing* 10
+ERROR: 09:34:59 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 10
+ERROR: 09:35:01 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 10
+ERROR: 09:35:03 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 10
+INFO: 09:35:07 GMT+0100 (CET) Printing* 11
+INFO: 09:35:09 GMT+0100 (CET) Printing* 12
+INFO: 09:35:11 GMT+0100 (CET) Printing* 13
+INFO: 09:35:13 GMT+0100 (CET) Printing* 14
+INFO: 09:35:15 GMT+0100 (CET) Printing* 15
+INFO: 09:35:17 GMT+0100 (CET) Printing* 16
+INFO: 09:35:19 GMT+0100 (CET) Printing* 17
+INFO: 09:35:21 GMT+0100 (CET) Printing* 18
+INFO: 09:35:23 GMT+0100 (CET) Printing* 19
+INFO: 09:35:25 GMT+0100 (CET) Printing* 20
+ERROR: 09:35:25 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 20
+ERROR: 09:35:27 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 20
+ERROR: 09:35:29 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 20
+INFO: 09:35:33 GMT+0100 (CET) Printing* 21
+INFO: 09:35:35 GMT+0100 (CET) Printing* 22
+INFO: 09:35:37 GMT+0100 (CET) Printing* 23
+INFO: 09:35:39 GMT+0100 (CET) Printing* 24
+INFO: 09:35:42 GMT+0100 (CET) Moving to delivery warehouse 0
+INFO: 09:35:45 GMT+0100 (CET) Unloading 0
+INFO: 09:35:48 GMT+0100 (CET) Job Done 0
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 09:52:37 GMT+0100 (CET) Job Submitted 0
+INFO: 09:52:40 GMT+0100 (CET) Job Started 0
+INFO: 09:52:43 GMT+0100 (CET) Loading 0
+INFO: 09:52:46 GMT+0100 (CET) Moving to printer 0
+INFO: 09:52:48 GMT+0100 (CET) Printing* 0
+INFO: 09:52:50 GMT+0100 (CET) Printing* 1
+INFO: 09:52:52 GMT+0100 (CET) Printing* 2
+INFO: 09:52:54 GMT+0100 (CET) Printing* 3
+INFO: 09:52:56 GMT+0100 (CET) Printing* 4
+INFO: 09:52:58 GMT+0100 (CET) Printing* 5
+INFO: 09:53:00 GMT+0100 (CET) Printing* 6
+INFO: 09:53:02 GMT+0100 (CET) Printing* 7
+INFO: 09:53:04 GMT+0100 (CET) Printing* 8
+INFO: 09:53:06 GMT+0100 (CET) Printing* 9
+INFO: 09:53:08 GMT+0100 (CET) Printing* 10
+ERROR: 09:53:08 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 10
+ERROR: 09:53:10 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 10
+ERROR: 09:53:12 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 10
+INFO: 09:53:16 GMT+0100 (CET) Printing* 11
+INFO: 09:53:18 GMT+0100 (CET) Printing* 12
+INFO: 09:53:20 GMT+0100 (CET) Printing* 13
+INFO: 09:53:22 GMT+0100 (CET) Printing* 14
+INFO: 09:53:24 GMT+0100 (CET) Printing* 15
+INFO: 09:53:26 GMT+0100 (CET) Printing* 16
+INFO: 09:53:28 GMT+0100 (CET) Printing* 17
+INFO: 09:53:30 GMT+0100 (CET) Printing* 18
+INFO: 09:53:32 GMT+0100 (CET) Printing* 19
+INFO: 09:53:34 GMT+0100 (CET) Printing* 20
+ERROR: 09:53:34 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 20
+ERROR: 09:53:36 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 20
+ERROR: 09:53:38 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 20
+INFO: 09:53:42 GMT+0100 (CET) Printing* 21
+INFO: 09:53:44 GMT+0100 (CET) Printing* 22
+INFO: 09:53:46 GMT+0100 (CET) Printing* 23
+INFO: 09:53:48 GMT+0100 (CET) Printing* 24
+INFO: 09:53:51 GMT+0100 (CET) Moving to delivery warehouse 0
+INFO: 09:53:54 GMT+0100 (CET) Unloading 0
+INFO: 09:53:57 GMT+0100 (CET) Job Done 0
+FATAL: Unable to connect to ROUTER
+Error: connect ECONNREFUSED 127.0.0.1:9090
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 10:05:37 GMT+0100 (CET) Job Submitted 0
+INFO: 10:05:40 GMT+0100 (CET) Job Started 0
+INFO: 10:05:43 GMT+0100 (CET) Loading 0
+INFO: 10:05:46 GMT+0100 (CET) Moving to printer 0
+INFO: 10:05:48 GMT+0100 (CET) Printing* 0
+INFO: 10:05:50 GMT+0100 (CET) Printing* 1
+INFO: 10:05:52 GMT+0100 (CET) Printing* 2
+INFO: 10:05:54 GMT+0100 (CET) Printing* 3
+INFO: 10:05:56 GMT+0100 (CET) Printing* 4
+INFO: 10:05:58 GMT+0100 (CET) Printing* 5
+INFO: 10:06:00 GMT+0100 (CET) Printing* 6
+INFO: 10:06:02 GMT+0100 (CET) Printing* 7
+INFO: 10:06:04 GMT+0100 (CET) Printing* 8
+INFO: 10:06:06 GMT+0100 (CET) Printing* 9
+INFO: 10:06:08 GMT+0100 (CET) Printing* 10
+ERROR: 10:06:08 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 10
+ERROR: 10:06:10 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 10
+ERROR: 10:06:12 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 10
+INFO: 10:06:16 GMT+0100 (CET) Printing* 11
+INFO: 10:06:18 GMT+0100 (CET) Printing* 12
+INFO: 10:06:20 GMT+0100 (CET) Printing* 13
+INFO: 10:06:22 GMT+0100 (CET) Printing* 14
+INFO: 10:06:24 GMT+0100 (CET) Printing* 15
+INFO: 10:06:26 GMT+0100 (CET) Printing* 16
+INFO: 10:06:28 GMT+0100 (CET) Printing* 17
+INFO: 10:06:30 GMT+0100 (CET) Printing* 18
+INFO: 10:06:32 GMT+0100 (CET) Printing* 19
+INFO: 10:06:34 GMT+0100 (CET) Printing* 20
+ERROR: 10:06:34 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 20
+ERROR: 10:06:36 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 20
+ERROR: 10:06:38 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 20
+INFO: 10:06:42 GMT+0100 (CET) Printing* 21
+INFO: 10:06:44 GMT+0100 (CET) Printing* 22
+INFO: 10:06:46 GMT+0100 (CET) Printing* 23
+INFO: 10:06:48 GMT+0100 (CET) Printing* 24
+INFO: 10:06:51 GMT+0100 (CET) Moving to delivery warehouse 0
+INFO: 10:06:54 GMT+0100 (CET) Unloading 0
+INFO: 10:06:57 GMT+0100 (CET) Job Done 0
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 10:20:56 GMT+0100 (CET) [object Object] 0
+INFO: 10:20:59 GMT+0100 (CET) [object Object] 0
+INFO: 10:21:02 GMT+0100 (CET) [object Object] 0
+INFO: 10:21:05 GMT+0100 (CET) [object Object] 0
+INFO: 10:21:07 GMT+0100 (CET) [object Object] 0
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 10:22:23 GMT+0100 (CET) [object Object] 0
+FATAL: Unable to connect to ROUTER
+Error: write after end
+INFO: 10:22:26 GMT+0100 (CET) [object Object] 0
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 10:22:51 GMT+0100 (CET) [object Object] 0
+INFO: 10:22:54 GMT+0100 (CET) [object Object] 0
+INFO: 10:22:57 GMT+0100 (CET) [object Object] 0
+INFO: 10:23:00 GMT+0100 (CET) [object Object] 0
+INFO: 10:23:02 GMT+0100 (CET) [object Object] 0
+INFO: 10:23:04 GMT+0100 (CET) [object Object] 1
+INFO: 10:23:06 GMT+0100 (CET) [object Object] 2
+INFO: 10:23:08 GMT+0100 (CET) [object Object] 3
+INFO: 10:23:10 GMT+0100 (CET) [object Object] 4
+INFO: 10:23:12 GMT+0100 (CET) [object Object] 5
+INFO: 10:23:14 GMT+0100 (CET) [object Object] 6
+INFO: 10:23:16 GMT+0100 (CET) [object Object] 7
+INFO: 10:23:18 GMT+0100 (CET) [object Object] 8
+INFO: 10:23:20 GMT+0100 (CET) [object Object] 9
+INFO: 10:23:22 GMT+0100 (CET) [object Object] 10
+ERROR: 10:23:23 GMT+0100 (CET) [object Object] 10
+ERROR: 10:23:25 GMT+0100 (CET) [object Object] 10
+ERROR: 10:23:27 GMT+0100 (CET) [object Object] 10
+INFO: 10:23:31 GMT+0100 (CET) [object Object] 11
+INFO: 10:23:33 GMT+0100 (CET) [object Object] 12
+INFO: 10:23:35 GMT+0100 (CET) [object Object] 13
+INFO: 10:23:37 GMT+0100 (CET) [object Object] 14
+INFO: 10:23:39 GMT+0100 (CET) [object Object] 15
+INFO: 10:23:41 GMT+0100 (CET) [object Object] 16
+INFO: 10:23:43 GMT+0100 (CET) [object Object] 17
+INFO: 10:23:45 GMT+0100 (CET) [object Object] 18
+INFO: 10:23:47 GMT+0100 (CET) [object Object] 19
+INFO: 10:23:49 GMT+0100 (CET) [object Object] 20
+ERROR: 10:23:49 GMT+0100 (CET) [object Object] 20
+ERROR: 10:23:51 GMT+0100 (CET) [object Object] 20
+ERROR: 10:23:53 GMT+0100 (CET) [object Object] 20
+INFO: 10:23:57 GMT+0100 (CET) [object Object] 21
+INFO: 10:23:59 GMT+0100 (CET) [object Object] 22
+INFO: 10:24:01 GMT+0100 (CET) [object Object] 23
+INFO: 10:24:03 GMT+0100 (CET) [object Object] 24
+INFO: 10:24:06 GMT+0100 (CET) [object Object] 0
+INFO: 10:24:09 GMT+0100 (CET) [object Object] 0
+INFO: 10:24:12 GMT+0100 (CET) [object Object] 0
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 10:25:07 GMT+0100 (CET) [object Object] 0
+INFO: 10:25:10 GMT+0100 (CET) [object Object] 0
+INFO: 10:25:13 GMT+0100 (CET) [object Object] 0
+INFO: 10:25:16 GMT+0100 (CET) [object Object] 0
+INFO: 10:25:18 GMT+0100 (CET) [object Object] 0
+INFO: 10:25:20 GMT+0100 (CET) [object Object] 1
+INFO: 10:25:22 GMT+0100 (CET) [object Object] 2
+INFO: 10:25:24 GMT+0100 (CET) [object Object] 3
+INFO: 10:25:26 GMT+0100 (CET) [object Object] 4
+INFO: 10:25:28 GMT+0100 (CET) [object Object] 5
+INFO: 10:25:30 GMT+0100 (CET) [object Object] 6
+INFO: 10:25:32 GMT+0100 (CET) [object Object] 7
+INFO: 10:25:34 GMT+0100 (CET) [object Object] 8
+INFO: 10:25:36 GMT+0100 (CET) [object Object] 9
+INFO: 10:25:38 GMT+0100 (CET) [object Object] 10
+ERROR: 10:25:38 GMT+0100 (CET) [object Object] 10
+ERROR: 10:25:40 GMT+0100 (CET) [object Object] 10
+ERROR: 10:25:42 GMT+0100 (CET) [object Object] 10
+INFO: 10:25:46 GMT+0100 (CET) [object Object] 11
+INFO: 10:25:48 GMT+0100 (CET) [object Object] 12
+INFO: 10:25:50 GMT+0100 (CET) [object Object] 13
+INFO: 10:25:52 GMT+0100 (CET) [object Object] 14
+INFO: 10:25:54 GMT+0100 (CET) [object Object] 15
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 10:35:56 GMT+0100 (CET) [object Object] 0
+INFO: 10:35:59 GMT+0100 (CET) [object Object] 0
+INFO: 10:36:02 GMT+0100 (CET) [object Object] 0
+INFO: 10:36:05 GMT+0100 (CET) [object Object] 0
+INFO: 10:36:07 GMT+0100 (CET) [object Object] 0
+INFO: 10:36:09 GMT+0100 (CET) [object Object] 1
+INFO: 10:36:11 GMT+0100 (CET) [object Object] 2
+INFO: 10:36:13 GMT+0100 (CET) [object Object] 3
+INFO: 10:36:15 GMT+0100 (CET) [object Object] 4
+INFO: 10:36:17 GMT+0100 (CET) [object Object] 5
+INFO: 10:36:19 GMT+0100 (CET) [object Object] 6
+INFO: 10:36:21 GMT+0100 (CET) [object Object] 7
+INFO: 10:36:23 GMT+0100 (CET) [object Object] 8
+INFO: 10:36:25 GMT+0100 (CET) [object Object] 9
+INFO: 10:36:27 GMT+0100 (CET) [object Object] 10
+ERROR: 10:36:27 GMT+0100 (CET) [object Object] 10
+ERROR: 10:36:29 GMT+0100 (CET) [object Object] 10
+ERROR: 10:36:31 GMT+0100 (CET) [object Object] 10
+INFO: 10:36:35 GMT+0100 (CET) [object Object] 11
+INFO: 10:36:37 GMT+0100 (CET) [object Object] 12
+INFO: 10:36:39 GMT+0100 (CET) [object Object] 13
+INFO: 10:36:41 GMT+0100 (CET) [object Object] 14
+INFO: 10:36:43 GMT+0100 (CET) [object Object] 15
+INFO: 10:36:45 GMT+0100 (CET) [object Object] 16
+INFO: 10:36:47 GMT+0100 (CET) [object Object] 17
+INFO: 10:36:49 GMT+0100 (CET) [object Object] 18
+INFO: 10:36:51 GMT+0100 (CET) [object Object] 19
+FATAL: Unable to connect to ROUTER
+Error: connect ECONNREFUSED 127.0.0.1:9090
+INFO: Database is connected ...
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 10:41:34 GMT+0100 (CET) [object Object] 0
+INFO: 10:41:37 GMT+0100 (CET) [object Object] 0
+INFO: 10:41:40 GMT+0100 (CET) [object Object] 0
+INFO: 10:41:43 GMT+0100 (CET) [object Object] 0
+INFO: 10:41:45 GMT+0100 (CET) [object Object] 0
+INFO: 10:41:47 GMT+0100 (CET) [object Object] 1
+INFO: 10:41:49 GMT+0100 (CET) [object Object] 2
+INFO: 10:41:51 GMT+0100 (CET) [object Object] 3
+INFO: 10:41:53 GMT+0100 (CET) [object Object] 4
+INFO: 10:41:55 GMT+0100 (CET) [object Object] 5
+INFO: 10:41:57 GMT+0100 (CET) [object Object] 6
+INFO: 10:41:59 GMT+0100 (CET) [object Object] 7
+INFO: 10:42:01 GMT+0100 (CET) [object Object] 8
+INFO: 10:42:03 GMT+0100 (CET) [object Object] 9
+INFO: 10:42:05 GMT+0100 (CET) [object Object] 10
+ERROR: 10:42:05 GMT+0100 (CET) [object Object] 10
+ERROR: 10:42:07 GMT+0100 (CET) [object Object] 10
+ERROR: 10:42:09 GMT+0100 (CET) [object Object] 10
+INFO: 10:42:13 GMT+0100 (CET) [object Object] 11
+INFO: 10:42:15 GMT+0100 (CET) [object Object] 12
+INFO: 10:42:17 GMT+0100 (CET) [object Object] 13
+INFO: 10:42:19 GMT+0100 (CET) [object Object] 14
+INFO: 10:42:21 GMT+0100 (CET) [object Object] 15
+INFO: 10:42:23 GMT+0100 (CET) [object Object] 16
+INFO: 10:42:25 GMT+0100 (CET) [object Object] 17
+INFO: 10:42:27 GMT+0100 (CET) [object Object] 18
+INFO: 10:42:29 GMT+0100 (CET) [object Object] 19
+INFO: 10:42:31 GMT+0100 (CET) [object Object] 20
+ERROR: 10:42:31 GMT+0100 (CET) [object Object] 20
+ERROR: 10:42:33 GMT+0100 (CET) [object Object] 20
+ERROR: 10:42:35 GMT+0100 (CET) [object Object] 20
+INFO: 10:42:39 GMT+0100 (CET) [object Object] 21
+INFO: 10:42:41 GMT+0100 (CET) [object Object] 22
+INFO: 10:42:43 GMT+0100 (CET) [object Object] 23
+INFO: 10:42:45 GMT+0100 (CET) [object Object] 24
+INFO: 10:42:48 GMT+0100 (CET) [object Object] 0
+INFO: 10:42:51 GMT+0100 (CET) [object Object] 0
+INFO: 10:42:54 GMT+0100 (CET) [object Object] 0
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 10:44:27 GMT+0100 (CET) [object Object] 0
+INFO: 10:44:30 GMT+0100 (CET) [object Object] 0
+INFO: 10:44:33 GMT+0100 (CET) [object Object] 0
+INFO: 10:44:36 GMT+0100 (CET) [object Object] 0
+INFO: 10:44:38 GMT+0100 (CET) [object Object] 0
+INFO: 10:44:40 GMT+0100 (CET) [object Object] 1
+INFO: 10:44:42 GMT+0100 (CET) [object Object] 2
+INFO: 10:44:44 GMT+0100 (CET) [object Object] 3
+INFO: 10:44:46 GMT+0100 (CET) [object Object] 4
+INFO: Database is connected ...
+INFO: Job sent successfully
+INFO: 10:45:02 GMT+0100 (CET) [object Object] 0
+INFO: 10:45:05 GMT+0100 (CET) [object Object] 0
+INFO: 10:45:08 GMT+0100 (CET) [object Object] 0
+INFO: 10:45:11 GMT+0100 (CET) [object Object] 0
+INFO: 10:45:13 GMT+0100 (CET) [object Object] 0
+INFO: 10:45:15 GMT+0100 (CET) [object Object] 1
+INFO: 10:45:17 GMT+0100 (CET) [object Object] 2
+INFO: 10:45:19 GMT+0100 (CET) [object Object] 3
+INFO: 10:45:21 GMT+0100 (CET) [object Object] 4
+INFO: 10:45:23 GMT+0100 (CET) [object Object] 5
+INFO: 10:45:25 GMT+0100 (CET) [object Object] 6
+INFO: 10:45:27 GMT+0100 (CET) [object Object] 7
+INFO: 10:45:29 GMT+0100 (CET) [object Object] 8
+INFO: 10:45:31 GMT+0100 (CET) [object Object] 9
+INFO: 10:45:33 GMT+0100 (CET) [object Object] 10
+ERROR: 10:45:33 GMT+0100 (CET) [object Object] 10
+ERROR: 10:45:35 GMT+0100 (CET) [object Object] 10
+ERROR: 10:45:37 GMT+0100 (CET) [object Object] 10
+INFO: 10:45:41 GMT+0100 (CET) [object Object] 11
+INFO: 10:45:43 GMT+0100 (CET) [object Object] 12
+INFO: 10:45:45 GMT+0100 (CET) [object Object] 13
+INFO: 10:45:47 GMT+0100 (CET) [object Object] 14
+INFO: 10:45:49 GMT+0100 (CET) [object Object] 15
+INFO: 10:45:51 GMT+0100 (CET) [object Object] 16
+INFO: 10:45:53 GMT+0100 (CET) [object Object] 17
+INFO: 10:45:55 GMT+0100 (CET) [object Object] 18
+INFO: 10:45:57 GMT+0100 (CET) [object Object] 19
+INFO: 10:45:59 GMT+0100 (CET) [object Object] 20
+ERROR: 10:45:59 GMT+0100 (CET) [object Object] 20
+ERROR: 10:46:01 GMT+0100 (CET) [object Object] 20
+ERROR: 10:46:03 GMT+0100 (CET) [object Object] 20
+INFO: 10:46:07 GMT+0100 (CET) [object Object] 21
+INFO: 10:46:09 GMT+0100 (CET) [object Object] 22
+INFO: 10:46:11 GMT+0100 (CET) [object Object] 23
+INFO: 10:46:13 GMT+0100 (CET) [object Object] 24
+INFO: 10:46:16 GMT+0100 (CET) [object Object] 0
+INFO: 10:46:19 GMT+0100 (CET) [object Object] 0
+INFO: 10:46:22 GMT+0100 (CET) [object Object] 0
+INFO: Database is connected ...
+INFO: Database is connected ...

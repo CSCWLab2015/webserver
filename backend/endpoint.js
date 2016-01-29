@@ -1,8 +1,9 @@
-var express    = require("express"),
-    mysql      = require("mysql"),
-    _          = require("lodash"),
-    bodyParser = require("body-parser"),
-    http       = require("http");
+var express     = require("express"),
+    mysql       = require("mysql"),
+    _           = require("lodash"),
+    bodyParser  = require("body-parser"),
+    http        = require("http"),
+    letters     = require("./json/letters.json");
 
 var options = {
   host: 'localhost',
@@ -23,21 +24,66 @@ var connection = mysql.createConnection({
   });
 
 var STATUS = {
-    800: "Status",
-    801: "Job Submitted",
-    802: "Job Started",
-    803: "Job Done",
-    810: "Printing*",
-    820: "Moving to printer",
-    821: "Moving to delivery warehouse",
-    830: "Loading",
-    831: "Unloading",
-    901: "Bluetooth communication error",
-    902: "Job could not be started",
-    910: "Brick is not available in the ware house to be used in printing",
-    911: "Brick is not picked up by the printer head from the bricks warehouse",
-    912: "Brick is not plugged to the plate (still in the head).",
-    913: "Brick is not plugged to the correct position on the plate"
+    800:  {
+            info: "Status",
+            message: "Status"
+          },
+    801: {
+          info: "Waiting",
+          message: "Job Submitted"
+          },
+    802: {
+          info: "Waiting",
+          message: "Job Started"
+          },
+    803: {
+          info: "Waiting",
+          message: "Job Done"
+          },
+    810: {
+          info: "Printing",
+          message: "Printing"
+          },
+    820: {
+          info: "Waiting",
+          message: "Moving to printer"
+          },
+    821: {
+          info: "Waiting",
+          message: "Moving to delivery warehouse"
+          },
+    830: {
+          info: "Waiting",
+          message: "Loading"
+          },
+    831: {
+          info: "Waiting",
+          message: "Unloading"
+          },
+    901: {
+          info: "Error",
+          message: "Bluetooth communication error"
+          },
+    902: {
+          info: "Error",
+          message: "Job could not be started"
+          },
+    910: {
+          info: "Error",
+          message: "Brick is not available in the ware house to be used in printing"
+          },
+    911: {
+          info: "Error",
+          message: "Brick is not picked up by the printer head from the bricks warehouse"
+          },
+    912: {
+          info: "Error",
+          message: "Brick is not plugged to the plate (still in the head)."
+          },
+    913: {
+          info: "Error",
+          message: "Brick is not plugged to the correct position on the plate"
+          }
 };
 
 var ROUTER = {
@@ -46,7 +92,7 @@ var ROUTER = {
   status: "/status"
 }
 
-var RESPONSE;
+var RESPONSE, LETTER ="";
 var app = express();
 
 
@@ -64,7 +110,7 @@ var request = http.request(options, function(response) {
     console.log("INFO: Job sent successfully");
 });
 request.on('error', function(err) {
-    console.log("FATAL: Unable to connect to ROUTER" + err);
+    console.log("FATAL: Unable to connect to ROUTER\n" + err);
 });
 
 
@@ -143,6 +189,8 @@ app.get("/letter/:id",function(req,res){
             "letter": returnVal.letter
           };
 
+          LETTER = returnVal.letter;
+
           request.write(JSON.stringify(payload), function(err) {request.end();});
 
         }
@@ -214,7 +262,8 @@ app.post("/status",function(req,res){
     var timestamp = Math.round(req.body.time/1000000);
 
     RESPONSE = {
-      "method": STATUS[method],
+      "code" : method,
+      "method": STATUS[method].message,
       "payload": payload,
       "timestamp": timestamp
     };
@@ -230,5 +279,39 @@ app.post("/status",function(req,res){
 app.get("/status",function(req,res){
   res.send(RESPONSE);
 });
+
+app.get("/letters",function(req,res){
+  res.send(letters);
+});
+
+app.get("/plates",function(req,res){
+  var plateInfo = {"letter": LETTER};
+  res.send(plateInfo);
+});
+
+app.get("/arstatus",function(req,res){
+
+  var code = 0,
+      arstatus = {
+        "status": "waiting",
+        "letter": "",
+        "index": -1,
+        "error": code
+      };
+
+
+  if (RESPONSE) {
+      if (RESPONSE.code.substring(0, 1) == "8")  code = 0;
+      arstatus = {
+        "status": STATUS[RESPONSE.code].info,
+        "letter": LETTER,
+        "index": RESPONSE.payload,
+        "error": parseInt(code, 10)
+      }
+  }
+
+  res.send(arstatus);
+});
+
 
 app.listen(8080);
