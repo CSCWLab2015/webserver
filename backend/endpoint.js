@@ -3,7 +3,8 @@ var express     = require("express"),
     _           = require("lodash"),
     bodyParser  = require("body-parser"),
     http        = require("http"),
-    letters     = require("./json/letters.json");
+    letters     = require("./json/letters.json"),
+    arstatus     = require("./json/status.json");
 
 var options = {
   host: 'localhost',
@@ -25,63 +26,63 @@ var connection = mysql.createConnection({
 
 var STATUS = {
     800:  {
-            info: "Status",
+            info: "status",
             message: "Status"
           },
     801: {
-          info: "Waiting",
+          info: "waiting",
           message: "Job Submitted"
           },
     802: {
-          info: "Waiting",
+          info: "waiting",
           message: "Job Started"
           },
     803: {
-          info: "Waiting",
+          info: "waiting",
           message: "Job Done"
           },
     810: {
-          info: "Printing",
+          info: "printing",
           message: "Printing"
           },
     820: {
-          info: "Waiting",
+          info: "waiting",
           message: "Moving to printer"
           },
     821: {
-          info: "Waiting",
+          info: "waiting",
           message: "Moving to delivery warehouse"
           },
     830: {
-          info: "Waiting",
+          info: "waiting",
           message: "Loading"
           },
     831: {
-          info: "Waiting",
+          info: "waiting",
           message: "Unloading"
           },
     901: {
-          info: "Error",
+          info: "error",
           message: "Bluetooth communication error"
           },
     902: {
-          info: "Error",
+          info: "error",
           message: "Job could not be started"
           },
     910: {
-          info: "Error",
+          info: "error",
           message: "Brick is not available in the ware house to be used in printing"
           },
     911: {
-          info: "Error",
+          info: "error",
           message: "Brick is not picked up by the printer head from the bricks warehouse"
           },
     912: {
-          info: "Error",
+          info: "error",
           message: "Brick is not plugged to the plate (still in the head)."
           },
     913: {
-          info: "Error",
+          info: "error",
           message: "Brick is not plugged to the correct position on the plate"
           }
 };
@@ -92,7 +93,7 @@ var ROUTER = {
   status: "/status"
 }
 
-var RESPONSE, LETTER ="";
+var arResponse, RESPONSE, LETTER ="";
 var app = express();
 
 
@@ -112,6 +113,14 @@ var request = http.request(options, function(response) {
 request.on('error', function(err) {
     console.log("FATAL: Unable to connect to ROUTER\n" + err);
 });
+
+var i =0;
+
+setInterval(function(){
+  arResponse = arstatus[i%29];
+  i++;
+  console.error(arResponse);
+  }, 2500);
 
 
 ////////////////////////////
@@ -270,7 +279,7 @@ app.post("/status",function(req,res){
 
     timestamp = new Date(timestamp).toTimeString();
 
-    if (method.substring(0, 1) == "9") console.log("ERROR: " + timestamp + " " + STATUS[method] + " " + payload);
+    if (method.substring(0, 1) == "9") console.log("ERROR: " + timestamp + " " + STATUS[method].message + " " + payload);
     else console.log("INFO: " + timestamp + " " + STATUS[method] + " " + payload);
 
     res.send(STATUS[method]);
@@ -291,26 +300,26 @@ app.get("/plates",function(req,res){
 
 app.get("/arstatus",function(req,res){
 
-  var code = 0,
-      arstatus = {
-        "status": "waiting",
-        "letter": "",
-        "index": -1,
-        "error": code
-      };
+  // var code = 0,
+  //     arstatus = {
+  //       "status": "waiting",
+  //       "letter": "",
+  //       "index": -1,
+  //       "error": code
+  //     };
 
 
-  if (RESPONSE) {
-      if (RESPONSE.code.substring(0, 1) == "8")  code = 0;
-      arstatus = {
-        "status": STATUS[RESPONSE.code].info,
-        "letter": LETTER,
-        "index": RESPONSE.payload,
-        "error": parseInt(code, 10)
-      }
-  }
+  // if (RESPONSE) {
+  //     if (RESPONSE.code.substring(0, 1) == "8")  code = 0;
+  //     arstatus = {
+  //       "status": STATUS[RESPONSE.code].info,
+  //       "letter": LETTER,
+  //       "index": RESPONSE.payload,
+  //       "error": parseInt(code, 10)
+  //     }
+  // }
 
-  res.send(arstatus);
+  res.send(arResponse);
 });
 
 
