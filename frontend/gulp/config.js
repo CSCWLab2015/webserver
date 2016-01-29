@@ -2,6 +2,8 @@ var dest = './build',
   src = './src',
   mui = './node_modules/material-ui/src';
 
+if (process.env.NODE_ENV === 'production') dest = './release'
+
 module.exports = {
   browserSync: {
     server: {

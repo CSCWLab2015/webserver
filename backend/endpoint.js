@@ -88,7 +88,7 @@ var STATUS = {
 };
 
 var ROUTER = {
-  host: "http://localhost:9090",
+  host: "http://10.223.90.122:9090",
   job: "/job",
   status: "/status"
 }
@@ -103,23 +103,16 @@ var log_file = fs.createWriteStream(__dirname + '/debug.log', {flags : 'a'});
 var log_stdout = process.stdout;
 
 console.log = function(d) { //
-  log_file.write(util.format(d) + '\n');
+  var today = new Date().toString();
+  log_file.write(today + " " + util.format(d) + '\n');
   log_stdout.write(util.format(d) + '\n');
 };
-
-var request = http.request(options, function(response) {
-    console.log("INFO: Job sent successfully");
-});
-request.on('error', function(err) {
-    console.log("FATAL: Unable to connect to ROUTER\n" + err);
-});
 
 var i =0;
 
 setInterval(function(){
   arResponse = arstatus[i%29];
   i++;
-  console.error(arResponse);
   }, 2500);
 
 
@@ -197,6 +190,13 @@ app.get("/letter/:id",function(req,res){
             "type": "print",
             "letter": returnVal.letter
           };
+
+          var request = http.request(options, function(response) {
+              console.log("INFO: Job sent successfully");
+          });
+          request.on('error', function(err) {
+              console.log("FATAL: Unable to connect to ROUTER\n" + err);
+          });
 
           LETTER = returnVal.letter;
 
@@ -277,10 +277,10 @@ app.post("/status",function(req,res){
       "timestamp": timestamp
     };
 
-    timestamp = new Date(timestamp).toTimeString();
+    timestamp = new Date(timestamp).toString();
 
     if (method.substring(0, 1) == "9") console.log("ERROR: " + timestamp + " " + STATUS[method].message + " " + payload);
-    else console.log("INFO: " + timestamp + " " + STATUS[method] + " " + payload);
+    else console.log("INFO: " + timestamp + " " + STATUS[method].message + " " + payload);
 
     res.send(STATUS[method]);
 });

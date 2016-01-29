@@ -1,637 +1,207 @@
-INFO: Database is connected ...
-INFO: Job sent successfully
-FATAL: Unable to connect to ROUTER
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: Database is connected ...
-INFO: Job sent successfully
-FATAL: Unable to connect to ROUTER
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-INFO: 
-FATAL: Unable to connect to ROUTER
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Job sent successfully
-FATAL: Unable to connect to ROUTER
-INFO: 
-INFO: 
-INFO: 
-INFO: Database is connected ...
-INFO: Job sent successfully
-FATAL: Unable to connect to ROUTER
-INFO: 02:36:18 GMT+0100 (CET)Job Submitted0
-INFO: 02:36:21 GMT+0100 (CET)Job Started0
-INFO: 02:36:24 GMT+0100 (CET)Loading0
-INFO: 02:36:27 GMT+0100 (CET)Moving to printer0
-INFO: 02:36:29 GMT+0100 (CET)Printing*0
-INFO: 02:36:31 GMT+0100 (CET)Printing*1
-INFO: 02:36:33 GMT+0100 (CET)Printing*2
-INFO: 02:36:35 GMT+0100 (CET)Printing*3
-INFO: 02:36:37 GMT+0100 (CET)Printing*4
-INFO: 02:36:39 GMT+0100 (CET)Printing*5
-INFO: 02:36:41 GMT+0100 (CET)Printing*6
-INFO: 02:36:43 GMT+0100 (CET)Printing*7
-INFO: 02:36:45 GMT+0100 (CET)Printing*8
-INFO: 02:36:47 GMT+0100 (CET)Printing*9
-INFO: 02:36:49 GMT+0100 (CET)Printing*10
-INFO: 02:36:49 GMT+0100 (CET)Brick is not picked up by the printer head from the bricks warehouse10
-INFO: 02:36:51 GMT+0100 (CET)Brick is not plugged to the plate (still in the head).10
-INFO: 02:36:53 GMT+0100 (CET)Brick is not plugged to the correct position on the plate10
-INFO: 02:36:57 GMT+0100 (CET)Printing*11
-INFO: 02:36:59 GMT+0100 (CET)Printing*12
-INFO: 02:37:01 GMT+0100 (CET)Printing*13
-INFO: 02:37:03 GMT+0100 (CET)Printing*14
-INFO: 02:37:06 GMT+0100 (CET)Printing*15
-INFO: 02:37:08 GMT+0100 (CET)Printing*16
-INFO: 02:37:10 GMT+0100 (CET)Printing*17
-INFO: 02:37:12 GMT+0100 (CET)Printing*18
-INFO: 02:37:14 GMT+0100 (CET)Printing*19
-INFO: 02:37:16 GMT+0100 (CET)Printing*20
-INFO: 02:37:16 GMT+0100 (CET)Brick is not picked up by the printer head from the bricks warehouse20
-INFO: 02:37:18 GMT+0100 (CET)Brick is not plugged to the plate (still in the head).20
-INFO: 02:37:20 GMT+0100 (CET)Brick is not plugged to the correct position on the plate20
-INFO: 02:37:24 GMT+0100 (CET)Printing*21
-INFO: 02:37:26 GMT+0100 (CET)Printing*22
-INFO: 02:37:28 GMT+0100 (CET)Printing*23
-INFO: 02:37:30 GMT+0100 (CET)Printing*24
-INFO: 02:37:33 GMT+0100 (CET)Moving to delivery warehouse0
-INFO: 02:37:36 GMT+0100 (CET)Unloading0
-INFO: 02:37:39 GMT+0100 (CET)Job Done0
-FATAL: Unable to connect to ROUTER
-FATAL: Unable to connect to ROUTER
-INFO: Database is connected ...
-INFO: Job sent successfully
-FATAL: Unable to connect to ROUTER
-INFO: Database is connected ...
-INFO: Job sent successfully
-FATAL: Unable to connect to ROUTER
-INFO: 02:43:06 GMT+0100 (CET) Job Submitted 0
-INFO: 02:43:09 GMT+0100 (CET) Job Started 0
-INFO: 02:43:12 GMT+0100 (CET) Loading 0
-INFO: 02:43:15 GMT+0100 (CET) Moving to printer 0
-INFO: 02:43:17 GMT+0100 (CET) Printing* 0
-INFO: 02:43:19 GMT+0100 (CET) Printing* 1
-INFO: 02:43:21 GMT+0100 (CET) Printing* 2
-INFO: 02:43:23 GMT+0100 (CET) Printing* 3
-INFO: 02:43:25 GMT+0100 (CET) Printing* 4
-INFO: 02:43:27 GMT+0100 (CET) Printing* 5
-INFO: 02:43:29 GMT+0100 (CET) Printing* 6
-INFO: 02:43:31 GMT+0100 (CET) Printing* 7
-INFO: 02:43:33 GMT+0100 (CET) Printing* 8
-INFO: 02:43:35 GMT+0100 (CET) Printing* 9
-INFO: 02:43:37 GMT+0100 (CET) Printing* 10
-ERROR: 02:43:37 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 10
-ERROR: 02:43:39 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 10
-ERROR: 02:43:41 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 10
-INFO: 02:43:45 GMT+0100 (CET) Printing* 11
-INFO: 02:43:47 GMT+0100 (CET) Printing* 12
-INFO: 02:43:49 GMT+0100 (CET) Printing* 13
-INFO: 02:43:51 GMT+0100 (CET) Printing* 14
-INFO: 02:43:53 GMT+0100 (CET) Printing* 15
-INFO: 02:43:55 GMT+0100 (CET) Printing* 16
-INFO: 02:43:57 GMT+0100 (CET) Printing* 17
-INFO: 02:43:59 GMT+0100 (CET) Printing* 18
-INFO: 02:44:01 GMT+0100 (CET) Printing* 19
-INFO: 02:44:03 GMT+0100 (CET) Printing* 20
-ERROR: 02:44:03 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 20
-ERROR: 02:44:05 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 20
-ERROR: 02:44:07 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 20
-INFO: 02:44:11 GMT+0100 (CET) Printing* 21
-INFO: 02:44:13 GMT+0100 (CET) Printing* 22
-INFO: 02:44:15 GMT+0100 (CET) Printing* 23
-INFO: 02:44:17 GMT+0100 (CET) Printing* 24
-INFO: 02:44:20 GMT+0100 (CET) Moving to delivery warehouse 0
-INFO: 02:44:23 GMT+0100 (CET) Unloading 0
-INFO: 02:44:26 GMT+0100 (CET) Job Done 0
-INFO: Database is connected ...
-INFO: Job sent successfully
-FATAL: Unable to connect to ROUTER
-INFO: 02:44:51 GMT+0100 (CET) Job Submitted 0
-INFO: 02:44:55 GMT+0100 (CET) Job Started 0
-INFO: 02:44:58 GMT+0100 (CET) Loading 0
-INFO: 02:45:01 GMT+0100 (CET) Moving to printer 0
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: Database is connected ...
-FATAL: Unable to connect to ROUTER
-INFO: Database is connected ...
-INFO: Job sent successfully
-FATAL: Unable to connect to ROUTERError: write after end
-INFO: 02:51:58 GMT+0100 (CET) Job Submitted 0
-INFO: 02:52:01 GMT+0100 (CET) Job Started 0
-INFO: 02:52:04 GMT+0100 (CET) Loading 0
-INFO: 02:52:07 GMT+0100 (CET) Moving to printer 0
-INFO: 02:52:09 GMT+0100 (CET) Printing* 0
-INFO: 02:52:11 GMT+0100 (CET) Printing* 1
-INFO: 02:52:13 GMT+0100 (CET) Printing* 2
-INFO: 02:52:15 GMT+0100 (CET) Printing* 3
-INFO: 02:52:17 GMT+0100 (CET) Printing* 4
-INFO: 02:52:19 GMT+0100 (CET) Printing* 5
-INFO: 02:52:21 GMT+0100 (CET) Printing* 6
-INFO: 02:52:23 GMT+0100 (CET) Printing* 7
-INFO: 02:52:25 GMT+0100 (CET) Printing* 8
-INFO: 02:52:27 GMT+0100 (CET) Printing* 9
-INFO: 02:52:29 GMT+0100 (CET) Printing* 10
-ERROR: 02:52:29 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 10
-ERROR: 02:52:31 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 10
-ERROR: 02:52:33 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 10
-INFO: 02:52:37 GMT+0100 (CET) Printing* 11
-INFO: 02:52:39 GMT+0100 (CET) Printing* 12
-INFO: 02:52:41 GMT+0100 (CET) Printing* 13
-INFO: 02:52:43 GMT+0100 (CET) Printing* 14
-INFO: 02:52:45 GMT+0100 (CET) Printing* 15
-INFO: 02:52:47 GMT+0100 (CET) Printing* 16
-INFO: 02:52:49 GMT+0100 (CET) Printing* 17
-INFO: 02:52:51 GMT+0100 (CET) Printing* 18
-INFO: 02:52:53 GMT+0100 (CET) Printing* 19
-INFO: 02:52:55 GMT+0100 (CET) Printing* 20
-ERROR: 02:52:55 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 20
-ERROR: 02:52:57 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 20
-ERROR: 02:52:59 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 20
-INFO: 02:53:03 GMT+0100 (CET) Printing* 21
-INFO: 02:53:05 GMT+0100 (CET) Printing* 22
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Job sent successfully
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-INFO: 02:54:09 GMT+0100 (CET) Job Submitted 0
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-INFO: 02:54:12 GMT+0100 (CET) Job Started 0
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-INFO: Database is connected ...
-INFO: Job sent successfully
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: write after end
-FATAL: Unable to connect to ROUTERError: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 02:55:01 GMT+0100 (CET) Job Submitted 0
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 02:55:29 GMT+0100 (CET) Job Submitted 0
-INFO: 02:55:32 GMT+0100 (CET) Job Started 0
-FATAL: Unable to connect to ROUTERError: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 09:34:28 GMT+0100 (CET) Job Submitted 0
-INFO: 09:34:31 GMT+0100 (CET) Job Started 0
-INFO: 09:34:34 GMT+0100 (CET) Loading 0
-INFO: 09:34:37 GMT+0100 (CET) Moving to printer 0
-INFO: 09:34:39 GMT+0100 (CET) Printing* 0
-INFO: 09:34:41 GMT+0100 (CET) Printing* 1
-INFO: 09:34:43 GMT+0100 (CET) Printing* 2
-INFO: 09:34:45 GMT+0100 (CET) Printing* 3
-INFO: 09:34:47 GMT+0100 (CET) Printing* 4
-INFO: 09:34:49 GMT+0100 (CET) Printing* 5
-INFO: 09:34:51 GMT+0100 (CET) Printing* 6
-INFO: 09:34:53 GMT+0100 (CET) Printing* 7
-INFO: 09:34:55 GMT+0100 (CET) Printing* 8
-INFO: 09:34:57 GMT+0100 (CET) Printing* 9
-INFO: 09:34:59 GMT+0100 (CET) Printing* 10
-ERROR: 09:34:59 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 10
-ERROR: 09:35:01 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 10
-ERROR: 09:35:03 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 10
-INFO: 09:35:07 GMT+0100 (CET) Printing* 11
-INFO: 09:35:09 GMT+0100 (CET) Printing* 12
-INFO: 09:35:11 GMT+0100 (CET) Printing* 13
-INFO: 09:35:13 GMT+0100 (CET) Printing* 14
-INFO: 09:35:15 GMT+0100 (CET) Printing* 15
-INFO: 09:35:17 GMT+0100 (CET) Printing* 16
-INFO: 09:35:19 GMT+0100 (CET) Printing* 17
-INFO: 09:35:21 GMT+0100 (CET) Printing* 18
-INFO: 09:35:23 GMT+0100 (CET) Printing* 19
-INFO: 09:35:25 GMT+0100 (CET) Printing* 20
-ERROR: 09:35:25 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 20
-ERROR: 09:35:27 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 20
-ERROR: 09:35:29 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 20
-INFO: 09:35:33 GMT+0100 (CET) Printing* 21
-INFO: 09:35:35 GMT+0100 (CET) Printing* 22
-INFO: 09:35:37 GMT+0100 (CET) Printing* 23
-INFO: 09:35:39 GMT+0100 (CET) Printing* 24
-INFO: 09:35:42 GMT+0100 (CET) Moving to delivery warehouse 0
-INFO: 09:35:45 GMT+0100 (CET) Unloading 0
-INFO: 09:35:48 GMT+0100 (CET) Job Done 0
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 09:52:37 GMT+0100 (CET) Job Submitted 0
-INFO: 09:52:40 GMT+0100 (CET) Job Started 0
-INFO: 09:52:43 GMT+0100 (CET) Loading 0
-INFO: 09:52:46 GMT+0100 (CET) Moving to printer 0
-INFO: 09:52:48 GMT+0100 (CET) Printing* 0
-INFO: 09:52:50 GMT+0100 (CET) Printing* 1
-INFO: 09:52:52 GMT+0100 (CET) Printing* 2
-INFO: 09:52:54 GMT+0100 (CET) Printing* 3
-INFO: 09:52:56 GMT+0100 (CET) Printing* 4
-INFO: 09:52:58 GMT+0100 (CET) Printing* 5
-INFO: 09:53:00 GMT+0100 (CET) Printing* 6
-INFO: 09:53:02 GMT+0100 (CET) Printing* 7
-INFO: 09:53:04 GMT+0100 (CET) Printing* 8
-INFO: 09:53:06 GMT+0100 (CET) Printing* 9
-INFO: 09:53:08 GMT+0100 (CET) Printing* 10
-ERROR: 09:53:08 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 10
-ERROR: 09:53:10 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 10
-ERROR: 09:53:12 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 10
-INFO: 09:53:16 GMT+0100 (CET) Printing* 11
-INFO: 09:53:18 GMT+0100 (CET) Printing* 12
-INFO: 09:53:20 GMT+0100 (CET) Printing* 13
-INFO: 09:53:22 GMT+0100 (CET) Printing* 14
-INFO: 09:53:24 GMT+0100 (CET) Printing* 15
-INFO: 09:53:26 GMT+0100 (CET) Printing* 16
-INFO: 09:53:28 GMT+0100 (CET) Printing* 17
-INFO: 09:53:30 GMT+0100 (CET) Printing* 18
-INFO: 09:53:32 GMT+0100 (CET) Printing* 19
-INFO: 09:53:34 GMT+0100 (CET) Printing* 20
-ERROR: 09:53:34 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 20
-ERROR: 09:53:36 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 20
-ERROR: 09:53:38 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 20
-INFO: 09:53:42 GMT+0100 (CET) Printing* 21
-INFO: 09:53:44 GMT+0100 (CET) Printing* 22
-INFO: 09:53:46 GMT+0100 (CET) Printing* 23
-INFO: 09:53:48 GMT+0100 (CET) Printing* 24
-INFO: 09:53:51 GMT+0100 (CET) Moving to delivery warehouse 0
-INFO: 09:53:54 GMT+0100 (CET) Unloading 0
-INFO: 09:53:57 GMT+0100 (CET) Job Done 0
-FATAL: Unable to connect to ROUTER
-Error: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 10:05:37 GMT+0100 (CET) Job Submitted 0
-INFO: 10:05:40 GMT+0100 (CET) Job Started 0
-INFO: 10:05:43 GMT+0100 (CET) Loading 0
-INFO: 10:05:46 GMT+0100 (CET) Moving to printer 0
-INFO: 10:05:48 GMT+0100 (CET) Printing* 0
-INFO: 10:05:50 GMT+0100 (CET) Printing* 1
-INFO: 10:05:52 GMT+0100 (CET) Printing* 2
-INFO: 10:05:54 GMT+0100 (CET) Printing* 3
-INFO: 10:05:56 GMT+0100 (CET) Printing* 4
-INFO: 10:05:58 GMT+0100 (CET) Printing* 5
-INFO: 10:06:00 GMT+0100 (CET) Printing* 6
-INFO: 10:06:02 GMT+0100 (CET) Printing* 7
-INFO: 10:06:04 GMT+0100 (CET) Printing* 8
-INFO: 10:06:06 GMT+0100 (CET) Printing* 9
-INFO: 10:06:08 GMT+0100 (CET) Printing* 10
-ERROR: 10:06:08 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 10
-ERROR: 10:06:10 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 10
-ERROR: 10:06:12 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 10
-INFO: 10:06:16 GMT+0100 (CET) Printing* 11
-INFO: 10:06:18 GMT+0100 (CET) Printing* 12
-INFO: 10:06:20 GMT+0100 (CET) Printing* 13
-INFO: 10:06:22 GMT+0100 (CET) Printing* 14
-INFO: 10:06:24 GMT+0100 (CET) Printing* 15
-INFO: 10:06:26 GMT+0100 (CET) Printing* 16
-INFO: 10:06:28 GMT+0100 (CET) Printing* 17
-INFO: 10:06:30 GMT+0100 (CET) Printing* 18
-INFO: 10:06:32 GMT+0100 (CET) Printing* 19
-INFO: 10:06:34 GMT+0100 (CET) Printing* 20
-ERROR: 10:06:34 GMT+0100 (CET) Brick is not picked up by the printer head from the bricks warehouse 20
-ERROR: 10:06:36 GMT+0100 (CET) Brick is not plugged to the plate (still in the head). 20
-ERROR: 10:06:38 GMT+0100 (CET) Brick is not plugged to the correct position on the plate 20
-INFO: 10:06:42 GMT+0100 (CET) Printing* 21
-INFO: 10:06:44 GMT+0100 (CET) Printing* 22
-INFO: 10:06:46 GMT+0100 (CET) Printing* 23
-INFO: 10:06:48 GMT+0100 (CET) Printing* 24
-INFO: 10:06:51 GMT+0100 (CET) Moving to delivery warehouse 0
-INFO: 10:06:54 GMT+0100 (CET) Unloading 0
-INFO: 10:06:57 GMT+0100 (CET) Job Done 0
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 10:20:56 GMT+0100 (CET) [object Object] 0
-INFO: 10:20:59 GMT+0100 (CET) [object Object] 0
-INFO: 10:21:02 GMT+0100 (CET) [object Object] 0
-INFO: 10:21:05 GMT+0100 (CET) [object Object] 0
-INFO: 10:21:07 GMT+0100 (CET) [object Object] 0
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 10:22:23 GMT+0100 (CET) [object Object] 0
-FATAL: Unable to connect to ROUTER
+Fri Jan 29 2016 12:29:44 GMT+0100 (Mitteleuropäische Zeit) INFO: Database is connected ...
+Fri Jan 29 2016 12:30:15 GMT+0100 (Mitteleuropäische Zeit) INFO: Job sent successfully
+Fri Jan 29 2016 12:30:18 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:18 GMT+0100 (Mitteleuropäische Zeit) [object Object] 0
+Fri Jan 29 2016 12:30:21 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:21 GMT+0100 (Mitteleuropäische Zeit) [object Object] 0
+Fri Jan 29 2016 12:30:24 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:24 GMT+0100 (Mitteleuropäische Zeit) [object Object] 0
+Fri Jan 29 2016 12:30:27 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:27 GMT+0100 (Mitteleuropäische Zeit) [object Object] 0
+Fri Jan 29 2016 12:30:29 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:29 GMT+0100 (Mitteleuropäische Zeit) [object Object] 0
+Fri Jan 29 2016 12:30:31 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:31 GMT+0100 (Mitteleuropäische Zeit) [object Object] 1
+Fri Jan 29 2016 12:30:33 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:33 GMT+0100 (Mitteleuropäische Zeit) [object Object] 2
+Fri Jan 29 2016 12:30:35 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:35 GMT+0100 (Mitteleuropäische Zeit) [object Object] 3
+Fri Jan 29 2016 12:30:37 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:37 GMT+0100 (Mitteleuropäische Zeit) [object Object] 4
+Fri Jan 29 2016 12:30:39 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:39 GMT+0100 (Mitteleuropäische Zeit) [object Object] 5
+Fri Jan 29 2016 12:30:41 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:41 GMT+0100 (Mitteleuropäische Zeit) [object Object] 6
+Fri Jan 29 2016 12:30:43 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:43 GMT+0100 (Mitteleuropäische Zeit) [object Object] 7
+Fri Jan 29 2016 12:30:45 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:45 GMT+0100 (Mitteleuropäische Zeit) [object Object] 8
+Fri Jan 29 2016 12:30:47 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:47 GMT+0100 (Mitteleuropäische Zeit) [object Object] 9
+Fri Jan 29 2016 12:30:49 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:49 GMT+0100 (Mitteleuropäische Zeit) [object Object] 10
+Fri Jan 29 2016 12:30:49 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:30:49 GMT+0100 (Mitteleuropäische Zeit) Brick is not picked up by the printer head from the bricks warehouse 10
+Fri Jan 29 2016 12:30:51 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:30:51 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the plate (still in the head). 10
+Fri Jan 29 2016 12:30:53 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:30:53 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the correct position on the plate 10
+Fri Jan 29 2016 12:30:57 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:57 GMT+0100 (Mitteleuropäische Zeit) [object Object] 11
+Fri Jan 29 2016 12:30:59 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:30:59 GMT+0100 (Mitteleuropäische Zeit) [object Object] 12
+Fri Jan 29 2016 12:31:01 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:01 GMT+0100 (Mitteleuropäische Zeit) [object Object] 13
+Fri Jan 29 2016 12:31:03 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:03 GMT+0100 (Mitteleuropäische Zeit) [object Object] 14
+Fri Jan 29 2016 12:31:05 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:05 GMT+0100 (Mitteleuropäische Zeit) [object Object] 15
+Fri Jan 29 2016 12:31:07 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:07 GMT+0100 (Mitteleuropäische Zeit) [object Object] 16
+Fri Jan 29 2016 12:31:09 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:09 GMT+0100 (Mitteleuropäische Zeit) [object Object] 17
+Fri Jan 29 2016 12:31:11 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:11 GMT+0100 (Mitteleuropäische Zeit) [object Object] 18
+Fri Jan 29 2016 12:31:13 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:13 GMT+0100 (Mitteleuropäische Zeit) [object Object] 19
+Fri Jan 29 2016 12:31:15 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:15 GMT+0100 (Mitteleuropäische Zeit) [object Object] 20
+Fri Jan 29 2016 12:31:15 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:31:15 GMT+0100 (Mitteleuropäische Zeit) Brick is not picked up by the printer head from the bricks warehouse 20
+Fri Jan 29 2016 12:31:17 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:31:17 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the plate (still in the head). 20
+Fri Jan 29 2016 12:31:19 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:31:19 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the correct position on the plate 20
+Fri Jan 29 2016 12:31:23 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:23 GMT+0100 (Mitteleuropäische Zeit) [object Object] 21
+Fri Jan 29 2016 12:31:25 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:25 GMT+0100 (Mitteleuropäische Zeit) [object Object] 22
+Fri Jan 29 2016 12:31:27 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:27 GMT+0100 (Mitteleuropäische Zeit) [object Object] 23
+Fri Jan 29 2016 12:31:29 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:29 GMT+0100 (Mitteleuropäische Zeit) [object Object] 24
+Fri Jan 29 2016 12:31:32 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:32 GMT+0100 (Mitteleuropäische Zeit) [object Object] 0
+Fri Jan 29 2016 12:31:35 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:35 GMT+0100 (Mitteleuropäische Zeit) [object Object] 0
+Fri Jan 29 2016 12:31:38 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:31:38 GMT+0100 (Mitteleuropäische Zeit) [object Object] 0
+Fri Jan 29 2016 12:31:50 GMT+0100 (Mitteleuropäische Zeit) FATAL: Unable to connect to ROUTER
 Error: write after end
-INFO: 10:22:26 GMT+0100 (CET) [object Object] 0
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 10:22:51 GMT+0100 (CET) [object Object] 0
-INFO: 10:22:54 GMT+0100 (CET) [object Object] 0
-INFO: 10:22:57 GMT+0100 (CET) [object Object] 0
-INFO: 10:23:00 GMT+0100 (CET) [object Object] 0
-INFO: 10:23:02 GMT+0100 (CET) [object Object] 0
-INFO: 10:23:04 GMT+0100 (CET) [object Object] 1
-INFO: 10:23:06 GMT+0100 (CET) [object Object] 2
-INFO: 10:23:08 GMT+0100 (CET) [object Object] 3
-INFO: 10:23:10 GMT+0100 (CET) [object Object] 4
-INFO: 10:23:12 GMT+0100 (CET) [object Object] 5
-INFO: 10:23:14 GMT+0100 (CET) [object Object] 6
-INFO: 10:23:16 GMT+0100 (CET) [object Object] 7
-INFO: 10:23:18 GMT+0100 (CET) [object Object] 8
-INFO: 10:23:20 GMT+0100 (CET) [object Object] 9
-INFO: 10:23:22 GMT+0100 (CET) [object Object] 10
-ERROR: 10:23:23 GMT+0100 (CET) [object Object] 10
-ERROR: 10:23:25 GMT+0100 (CET) [object Object] 10
-ERROR: 10:23:27 GMT+0100 (CET) [object Object] 10
-INFO: 10:23:31 GMT+0100 (CET) [object Object] 11
-INFO: 10:23:33 GMT+0100 (CET) [object Object] 12
-INFO: 10:23:35 GMT+0100 (CET) [object Object] 13
-INFO: 10:23:37 GMT+0100 (CET) [object Object] 14
-INFO: 10:23:39 GMT+0100 (CET) [object Object] 15
-INFO: 10:23:41 GMT+0100 (CET) [object Object] 16
-INFO: 10:23:43 GMT+0100 (CET) [object Object] 17
-INFO: 10:23:45 GMT+0100 (CET) [object Object] 18
-INFO: 10:23:47 GMT+0100 (CET) [object Object] 19
-INFO: 10:23:49 GMT+0100 (CET) [object Object] 20
-ERROR: 10:23:49 GMT+0100 (CET) [object Object] 20
-ERROR: 10:23:51 GMT+0100 (CET) [object Object] 20
-ERROR: 10:23:53 GMT+0100 (CET) [object Object] 20
-INFO: 10:23:57 GMT+0100 (CET) [object Object] 21
-INFO: 10:23:59 GMT+0100 (CET) [object Object] 22
-INFO: 10:24:01 GMT+0100 (CET) [object Object] 23
-INFO: 10:24:03 GMT+0100 (CET) [object Object] 24
-INFO: 10:24:06 GMT+0100 (CET) [object Object] 0
-INFO: 10:24:09 GMT+0100 (CET) [object Object] 0
-INFO: 10:24:12 GMT+0100 (CET) [object Object] 0
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 10:25:07 GMT+0100 (CET) [object Object] 0
-INFO: 10:25:10 GMT+0100 (CET) [object Object] 0
-INFO: 10:25:13 GMT+0100 (CET) [object Object] 0
-INFO: 10:25:16 GMT+0100 (CET) [object Object] 0
-INFO: 10:25:18 GMT+0100 (CET) [object Object] 0
-INFO: 10:25:20 GMT+0100 (CET) [object Object] 1
-INFO: 10:25:22 GMT+0100 (CET) [object Object] 2
-INFO: 10:25:24 GMT+0100 (CET) [object Object] 3
-INFO: 10:25:26 GMT+0100 (CET) [object Object] 4
-INFO: 10:25:28 GMT+0100 (CET) [object Object] 5
-INFO: 10:25:30 GMT+0100 (CET) [object Object] 6
-INFO: 10:25:32 GMT+0100 (CET) [object Object] 7
-INFO: 10:25:34 GMT+0100 (CET) [object Object] 8
-INFO: 10:25:36 GMT+0100 (CET) [object Object] 9
-INFO: 10:25:38 GMT+0100 (CET) [object Object] 10
-ERROR: 10:25:38 GMT+0100 (CET) [object Object] 10
-ERROR: 10:25:40 GMT+0100 (CET) [object Object] 10
-ERROR: 10:25:42 GMT+0100 (CET) [object Object] 10
-INFO: 10:25:46 GMT+0100 (CET) [object Object] 11
-INFO: 10:25:48 GMT+0100 (CET) [object Object] 12
-INFO: 10:25:50 GMT+0100 (CET) [object Object] 13
-INFO: 10:25:52 GMT+0100 (CET) [object Object] 14
-INFO: 10:25:54 GMT+0100 (CET) [object Object] 15
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 10:35:56 GMT+0100 (CET) [object Object] 0
-INFO: 10:35:59 GMT+0100 (CET) [object Object] 0
-INFO: 10:36:02 GMT+0100 (CET) [object Object] 0
-INFO: 10:36:05 GMT+0100 (CET) [object Object] 0
-INFO: 10:36:07 GMT+0100 (CET) [object Object] 0
-INFO: 10:36:09 GMT+0100 (CET) [object Object] 1
-INFO: 10:36:11 GMT+0100 (CET) [object Object] 2
-INFO: 10:36:13 GMT+0100 (CET) [object Object] 3
-INFO: 10:36:15 GMT+0100 (CET) [object Object] 4
-INFO: 10:36:17 GMT+0100 (CET) [object Object] 5
-INFO: 10:36:19 GMT+0100 (CET) [object Object] 6
-INFO: 10:36:21 GMT+0100 (CET) [object Object] 7
-INFO: 10:36:23 GMT+0100 (CET) [object Object] 8
-INFO: 10:36:25 GMT+0100 (CET) [object Object] 9
-INFO: 10:36:27 GMT+0100 (CET) [object Object] 10
-ERROR: 10:36:27 GMT+0100 (CET) [object Object] 10
-ERROR: 10:36:29 GMT+0100 (CET) [object Object] 10
-ERROR: 10:36:31 GMT+0100 (CET) [object Object] 10
-INFO: 10:36:35 GMT+0100 (CET) [object Object] 11
-INFO: 10:36:37 GMT+0100 (CET) [object Object] 12
-INFO: 10:36:39 GMT+0100 (CET) [object Object] 13
-INFO: 10:36:41 GMT+0100 (CET) [object Object] 14
-INFO: 10:36:43 GMT+0100 (CET) [object Object] 15
-INFO: 10:36:45 GMT+0100 (CET) [object Object] 16
-INFO: 10:36:47 GMT+0100 (CET) [object Object] 17
-INFO: 10:36:49 GMT+0100 (CET) [object Object] 18
-INFO: 10:36:51 GMT+0100 (CET) [object Object] 19
-FATAL: Unable to connect to ROUTER
-Error: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 10:41:34 GMT+0100 (CET) [object Object] 0
-INFO: 10:41:37 GMT+0100 (CET) [object Object] 0
-INFO: 10:41:40 GMT+0100 (CET) [object Object] 0
-INFO: 10:41:43 GMT+0100 (CET) [object Object] 0
-INFO: 10:41:45 GMT+0100 (CET) [object Object] 0
-INFO: 10:41:47 GMT+0100 (CET) [object Object] 1
-INFO: 10:41:49 GMT+0100 (CET) [object Object] 2
-INFO: 10:41:51 GMT+0100 (CET) [object Object] 3
-INFO: 10:41:53 GMT+0100 (CET) [object Object] 4
-INFO: 10:41:55 GMT+0100 (CET) [object Object] 5
-INFO: 10:41:57 GMT+0100 (CET) [object Object] 6
-INFO: 10:41:59 GMT+0100 (CET) [object Object] 7
-INFO: 10:42:01 GMT+0100 (CET) [object Object] 8
-INFO: 10:42:03 GMT+0100 (CET) [object Object] 9
-INFO: 10:42:05 GMT+0100 (CET) [object Object] 10
-ERROR: 10:42:05 GMT+0100 (CET) [object Object] 10
-ERROR: 10:42:07 GMT+0100 (CET) [object Object] 10
-ERROR: 10:42:09 GMT+0100 (CET) [object Object] 10
-INFO: 10:42:13 GMT+0100 (CET) [object Object] 11
-INFO: 10:42:15 GMT+0100 (CET) [object Object] 12
-INFO: 10:42:17 GMT+0100 (CET) [object Object] 13
-INFO: 10:42:19 GMT+0100 (CET) [object Object] 14
-INFO: 10:42:21 GMT+0100 (CET) [object Object] 15
-INFO: 10:42:23 GMT+0100 (CET) [object Object] 16
-INFO: 10:42:25 GMT+0100 (CET) [object Object] 17
-INFO: 10:42:27 GMT+0100 (CET) [object Object] 18
-INFO: 10:42:29 GMT+0100 (CET) [object Object] 19
-INFO: 10:42:31 GMT+0100 (CET) [object Object] 20
-ERROR: 10:42:31 GMT+0100 (CET) [object Object] 20
-ERROR: 10:42:33 GMT+0100 (CET) [object Object] 20
-ERROR: 10:42:35 GMT+0100 (CET) [object Object] 20
-INFO: 10:42:39 GMT+0100 (CET) [object Object] 21
-INFO: 10:42:41 GMT+0100 (CET) [object Object] 22
-INFO: 10:42:43 GMT+0100 (CET) [object Object] 23
-INFO: 10:42:45 GMT+0100 (CET) [object Object] 24
-INFO: 10:42:48 GMT+0100 (CET) [object Object] 0
-INFO: 10:42:51 GMT+0100 (CET) [object Object] 0
-INFO: 10:42:54 GMT+0100 (CET) [object Object] 0
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 10:44:27 GMT+0100 (CET) [object Object] 0
-INFO: 10:44:30 GMT+0100 (CET) [object Object] 0
-INFO: 10:44:33 GMT+0100 (CET) [object Object] 0
-INFO: 10:44:36 GMT+0100 (CET) [object Object] 0
-INFO: 10:44:38 GMT+0100 (CET) [object Object] 0
-INFO: 10:44:40 GMT+0100 (CET) [object Object] 1
-INFO: 10:44:42 GMT+0100 (CET) [object Object] 2
-INFO: 10:44:44 GMT+0100 (CET) [object Object] 3
-INFO: 10:44:46 GMT+0100 (CET) [object Object] 4
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 10:45:02 GMT+0100 (CET) [object Object] 0
-INFO: 10:45:05 GMT+0100 (CET) [object Object] 0
-INFO: 10:45:08 GMT+0100 (CET) [object Object] 0
-INFO: 10:45:11 GMT+0100 (CET) [object Object] 0
-INFO: 10:45:13 GMT+0100 (CET) [object Object] 0
-INFO: 10:45:15 GMT+0100 (CET) [object Object] 1
-INFO: 10:45:17 GMT+0100 (CET) [object Object] 2
-INFO: 10:45:19 GMT+0100 (CET) [object Object] 3
-INFO: 10:45:21 GMT+0100 (CET) [object Object] 4
-INFO: 10:45:23 GMT+0100 (CET) [object Object] 5
-INFO: 10:45:25 GMT+0100 (CET) [object Object] 6
-INFO: 10:45:27 GMT+0100 (CET) [object Object] 7
-INFO: 10:45:29 GMT+0100 (CET) [object Object] 8
-INFO: 10:45:31 GMT+0100 (CET) [object Object] 9
-INFO: 10:45:33 GMT+0100 (CET) [object Object] 10
-ERROR: 10:45:33 GMT+0100 (CET) [object Object] 10
-ERROR: 10:45:35 GMT+0100 (CET) [object Object] 10
-ERROR: 10:45:37 GMT+0100 (CET) [object Object] 10
-INFO: 10:45:41 GMT+0100 (CET) [object Object] 11
-INFO: 10:45:43 GMT+0100 (CET) [object Object] 12
-INFO: 10:45:45 GMT+0100 (CET) [object Object] 13
-INFO: 10:45:47 GMT+0100 (CET) [object Object] 14
-INFO: 10:45:49 GMT+0100 (CET) [object Object] 15
-INFO: 10:45:51 GMT+0100 (CET) [object Object] 16
-INFO: 10:45:53 GMT+0100 (CET) [object Object] 17
-INFO: 10:45:55 GMT+0100 (CET) [object Object] 18
-INFO: 10:45:57 GMT+0100 (CET) [object Object] 19
-INFO: 10:45:59 GMT+0100 (CET) [object Object] 20
-ERROR: 10:45:59 GMT+0100 (CET) [object Object] 20
-ERROR: 10:46:01 GMT+0100 (CET) [object Object] 20
-ERROR: 10:46:03 GMT+0100 (CET) [object Object] 20
-INFO: 10:46:07 GMT+0100 (CET) [object Object] 21
-INFO: 10:46:09 GMT+0100 (CET) [object Object] 22
-INFO: 10:46:11 GMT+0100 (CET) [object Object] 23
-INFO: 10:46:13 GMT+0100 (CET) [object Object] 24
-INFO: 10:46:16 GMT+0100 (CET) [object Object] 0
-INFO: 10:46:19 GMT+0100 (CET) [object Object] 0
-INFO: 10:46:22 GMT+0100 (CET) [object Object] 0
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Database is connected ...
-INFO: Job sent successfully
-INFO: 11:16:10 GMT+0100 (CET) [object Object] 0
-INFO: 11:16:13 GMT+0100 (CET) [object Object] 0
-INFO: 11:16:16 GMT+0100 (CET) [object Object] 0
-INFO: 11:16:19 GMT+0100 (CET) [object Object] 0
-INFO: 11:16:21 GMT+0100 (CET) [object Object] 0
-INFO: 11:16:23 GMT+0100 (CET) [object Object] 1
-INFO: 11:16:25 GMT+0100 (CET) [object Object] 2
-INFO: 11:16:27 GMT+0100 (CET) [object Object] 3
-INFO: 11:16:29 GMT+0100 (CET) [object Object] 4
-INFO: 11:16:31 GMT+0100 (CET) [object Object] 5
-INFO: 11:16:33 GMT+0100 (CET) [object Object] 6
-INFO: 11:16:35 GMT+0100 (CET) [object Object] 7
-INFO: 11:16:37 GMT+0100 (CET) [object Object] 8
-INFO: 11:16:39 GMT+0100 (CET) [object Object] 9
-INFO: 11:16:41 GMT+0100 (CET) [object Object] 10
-ERROR: 11:16:41 GMT+0100 (CET) [object Object] 10
-ERROR: 11:16:43 GMT+0100 (CET) [object Object] 10
-ERROR: 11:16:45 GMT+0100 (CET) [object Object] 10
-INFO: 11:16:49 GMT+0100 (CET) [object Object] 11
-INFO: 11:16:51 GMT+0100 (CET) [object Object] 12
-INFO: 11:16:53 GMT+0100 (CET) [object Object] 13
-INFO: 11:16:55 GMT+0100 (CET) [object Object] 14
-INFO: 11:16:57 GMT+0100 (CET) [object Object] 15
-INFO: 11:16:59 GMT+0100 (CET) [object Object] 16
-INFO: 11:17:01 GMT+0100 (CET) [object Object] 17
-INFO: 11:17:03 GMT+0100 (CET) [object Object] 18
-INFO: 11:17:05 GMT+0100 (CET) [object Object] 19
-INFO: 11:17:07 GMT+0100 (CET) [object Object] 20
-ERROR: 11:17:07 GMT+0100 (CET) [object Object] 20
-ERROR: 11:17:09 GMT+0100 (CET) [object Object] 20
-ERROR: 11:17:11 GMT+0100 (CET) [object Object] 20
-INFO: 11:17:15 GMT+0100 (CET) [object Object] 21
-INFO: 11:17:17 GMT+0100 (CET) [object Object] 22
-INFO: 11:17:19 GMT+0100 (CET) [object Object] 23
-INFO: 11:17:21 GMT+0100 (CET) [object Object] 24
-INFO: 11:17:24 GMT+0100 (CET) [object Object] 0
-INFO: 11:17:27 GMT+0100 (CET) [object Object] 0
-INFO: 11:17:30 GMT+0100 (CET) [object Object] 0
-FATAL: Unable to connect to ROUTER
-Error: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-FATAL: Unable to connect to ROUTER
-Error: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-FATAL: Unable to connect to ROUTER
-Error: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-FATAL: Unable to connect to ROUTER
-Error: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-FATAL: Unable to connect to ROUTER
-Error: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-FATAL: Unable to connect to ROUTER
-Error: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-FATAL: Unable to connect to ROUTER
-Error: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-FATAL: Unable to connect to ROUTER
-Error: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-FATAL: Unable to connect to ROUTER
-Error: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
-FATAL: Unable to connect to ROUTER
-Error: connect ECONNREFUSED 127.0.0.1:9090
-INFO: Database is connected ...
+Fri Jan 29 2016 12:32:15 GMT+0100 (Mitteleuropäische Zeit) FATAL: Unable to connect to ROUTER
+Error: write after end
+Fri Jan 29 2016 12:32:32 GMT+0100 (Mitteleuropäische Zeit) FATAL: Unable to connect to ROUTER
+Error: write after end
+Fri Jan 29 2016 12:33:43 GMT+0100 (Mitteleuropäische Zeit) INFO: Database is connected ...
+Fri Jan 29 2016 12:33:48 GMT+0100 (Mitteleuropäische Zeit) INFO: Job sent successfully
+Fri Jan 29 2016 12:33:51 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:33:51 GMT+0100 (Mitteleuropäische Zeit) Job Submitted 0
+Fri Jan 29 2016 12:33:54 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:33:54 GMT+0100 (Mitteleuropäische Zeit) Job Started 0
+Fri Jan 29 2016 12:33:57 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:33:57 GMT+0100 (Mitteleuropäische Zeit) Loading 0
+Fri Jan 29 2016 12:34:00 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:00 GMT+0100 (Mitteleuropäische Zeit) Moving to printer 0
+Fri Jan 29 2016 12:34:02 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:02 GMT+0100 (Mitteleuropäische Zeit) Printing 0
+Fri Jan 29 2016 12:34:04 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:04 GMT+0100 (Mitteleuropäische Zeit) Printing 1
+Fri Jan 29 2016 12:34:06 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:06 GMT+0100 (Mitteleuropäische Zeit) Printing 2
+Fri Jan 29 2016 12:34:08 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:08 GMT+0100 (Mitteleuropäische Zeit) Printing 3
+Fri Jan 29 2016 12:34:10 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:10 GMT+0100 (Mitteleuropäische Zeit) Printing 4
+Fri Jan 29 2016 12:34:12 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:12 GMT+0100 (Mitteleuropäische Zeit) Printing 5
+Fri Jan 29 2016 12:34:14 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:14 GMT+0100 (Mitteleuropäische Zeit) Printing 6
+Fri Jan 29 2016 12:34:16 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:16 GMT+0100 (Mitteleuropäische Zeit) Printing 7
+Fri Jan 29 2016 12:34:18 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:18 GMT+0100 (Mitteleuropäische Zeit) Printing 8
+Fri Jan 29 2016 12:34:20 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:20 GMT+0100 (Mitteleuropäische Zeit) Printing 9
+Fri Jan 29 2016 12:34:22 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:22 GMT+0100 (Mitteleuropäische Zeit) Printing 10
+Fri Jan 29 2016 12:34:22 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:34:22 GMT+0100 (Mitteleuropäische Zeit) Brick is not picked up by the printer head from the bricks warehouse 10
+Fri Jan 29 2016 12:34:24 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:34:24 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the plate (still in the head). 10
+Fri Jan 29 2016 12:34:26 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:34:26 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the correct position on the plate 10
+Fri Jan 29 2016 12:34:30 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:30 GMT+0100 (Mitteleuropäische Zeit) Printing 11
+Fri Jan 29 2016 12:34:32 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:32 GMT+0100 (Mitteleuropäische Zeit) Printing 12
+Fri Jan 29 2016 12:34:34 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:34 GMT+0100 (Mitteleuropäische Zeit) Printing 13
+Fri Jan 29 2016 12:34:36 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:36 GMT+0100 (Mitteleuropäische Zeit) Printing 14
+Fri Jan 29 2016 12:34:38 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:38 GMT+0100 (Mitteleuropäische Zeit) Printing 15
+Fri Jan 29 2016 12:34:40 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:40 GMT+0100 (Mitteleuropäische Zeit) Printing 16
+Fri Jan 29 2016 12:34:42 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:42 GMT+0100 (Mitteleuropäische Zeit) Printing 17
+Fri Jan 29 2016 12:34:44 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:44 GMT+0100 (Mitteleuropäische Zeit) Printing 18
+Fri Jan 29 2016 12:34:47 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:46 GMT+0100 (Mitteleuropäische Zeit) Printing 19
+Fri Jan 29 2016 12:34:49 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:49 GMT+0100 (Mitteleuropäische Zeit) Printing 20
+Fri Jan 29 2016 12:34:49 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:34:49 GMT+0100 (Mitteleuropäische Zeit) Brick is not picked up by the printer head from the bricks warehouse 20
+Fri Jan 29 2016 12:34:51 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:34:51 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the plate (still in the head). 20
+Fri Jan 29 2016 12:34:53 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:34:53 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the correct position on the plate 20
+Fri Jan 29 2016 12:34:57 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:57 GMT+0100 (Mitteleuropäische Zeit) Printing 21
+Fri Jan 29 2016 12:34:59 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:34:59 GMT+0100 (Mitteleuropäische Zeit) Printing 22
+Fri Jan 29 2016 12:35:01 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:35:01 GMT+0100 (Mitteleuropäische Zeit) Printing 23
+Fri Jan 29 2016 12:35:03 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:35:03 GMT+0100 (Mitteleuropäische Zeit) Printing 24
+Fri Jan 29 2016 12:35:06 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:35:06 GMT+0100 (Mitteleuropäische Zeit) Moving to delivery warehouse 0
+Fri Jan 29 2016 12:35:09 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:35:09 GMT+0100 (Mitteleuropäische Zeit) Unloading 0
+Fri Jan 29 2016 12:35:12 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:35:12 GMT+0100 (Mitteleuropäische Zeit) Job Done 0
+Fri Jan 29 2016 12:42:08 GMT+0100 (Mitteleuropäische Zeit) INFO: Job sent successfully
+Fri Jan 29 2016 12:42:11 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:11 GMT+0100 (Mitteleuropäische Zeit) Job Submitted 0
+Fri Jan 29 2016 12:42:14 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:14 GMT+0100 (Mitteleuropäische Zeit) Job Started 0
+Fri Jan 29 2016 12:42:17 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:17 GMT+0100 (Mitteleuropäische Zeit) Loading 0
+Fri Jan 29 2016 12:42:20 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:20 GMT+0100 (Mitteleuropäische Zeit) Moving to printer 0
+Fri Jan 29 2016 12:42:22 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:22 GMT+0100 (Mitteleuropäische Zeit) Printing 0
+Fri Jan 29 2016 12:42:24 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:24 GMT+0100 (Mitteleuropäische Zeit) Printing 1
+Fri Jan 29 2016 12:42:26 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:26 GMT+0100 (Mitteleuropäische Zeit) Printing 2
+Fri Jan 29 2016 12:42:28 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:28 GMT+0100 (Mitteleuropäische Zeit) Printing 3
+Fri Jan 29 2016 12:42:30 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:30 GMT+0100 (Mitteleuropäische Zeit) Printing 4
+Fri Jan 29 2016 12:42:32 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:32 GMT+0100 (Mitteleuropäische Zeit) Printing 5
+Fri Jan 29 2016 12:42:34 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:34 GMT+0100 (Mitteleuropäische Zeit) Printing 6
+Fri Jan 29 2016 12:42:36 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:36 GMT+0100 (Mitteleuropäische Zeit) Printing 7
+Fri Jan 29 2016 12:42:38 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:38 GMT+0100 (Mitteleuropäische Zeit) Printing 8
+Fri Jan 29 2016 12:42:40 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:40 GMT+0100 (Mitteleuropäische Zeit) Printing 9
+Fri Jan 29 2016 12:42:42 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:42 GMT+0100 (Mitteleuropäische Zeit) Printing 10
+Fri Jan 29 2016 12:42:42 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:42:42 GMT+0100 (Mitteleuropäische Zeit) Brick is not picked up by the printer head from the bricks warehouse 10
+Fri Jan 29 2016 12:42:44 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:42:44 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the plate (still in the head). 10
+Fri Jan 29 2016 12:42:46 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:42:46 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the correct position on the plate 10
+Fri Jan 29 2016 12:42:50 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:50 GMT+0100 (Mitteleuropäische Zeit) Printing 11
+Fri Jan 29 2016 12:42:52 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:52 GMT+0100 (Mitteleuropäische Zeit) Printing 12
+Fri Jan 29 2016 12:42:54 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:54 GMT+0100 (Mitteleuropäische Zeit) Printing 13
+Fri Jan 29 2016 12:42:56 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:56 GMT+0100 (Mitteleuropäische Zeit) Printing 14
+Fri Jan 29 2016 12:42:58 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:42:58 GMT+0100 (Mitteleuropäische Zeit) Printing 15
+Fri Jan 29 2016 12:43:00 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:43:00 GMT+0100 (Mitteleuropäische Zeit) Printing 16
+Fri Jan 29 2016 12:43:02 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:43:02 GMT+0100 (Mitteleuropäische Zeit) Printing 17
+Fri Jan 29 2016 12:43:04 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:43:04 GMT+0100 (Mitteleuropäische Zeit) Printing 18
+Fri Jan 29 2016 12:43:06 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:43:06 GMT+0100 (Mitteleuropäische Zeit) Printing 19
+Fri Jan 29 2016 12:43:08 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:43:08 GMT+0100 (Mitteleuropäische Zeit) Printing 20
+Fri Jan 29 2016 12:43:08 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:43:08 GMT+0100 (Mitteleuropäische Zeit) Brick is not picked up by the printer head from the bricks warehouse 20
+Fri Jan 29 2016 12:43:10 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:43:10 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the plate (still in the head). 20
+Fri Jan 29 2016 12:43:12 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:43:12 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the correct position on the plate 20
+Fri Jan 29 2016 12:43:16 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:43:16 GMT+0100 (Mitteleuropäische Zeit) Printing 21
+Fri Jan 29 2016 12:43:18 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:43:18 GMT+0100 (Mitteleuropäische Zeit) Printing 22
+Fri Jan 29 2016 12:43:20 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:43:20 GMT+0100 (Mitteleuropäische Zeit) Printing 23
+Fri Jan 29 2016 12:43:22 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:43:22 GMT+0100 (Mitteleuropäische Zeit) Printing 24
+Fri Jan 29 2016 12:43:25 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:43:25 GMT+0100 (Mitteleuropäische Zeit) Moving to delivery warehouse 0
+Fri Jan 29 2016 12:43:28 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:43:28 GMT+0100 (Mitteleuropäische Zeit) Unloading 0
+Fri Jan 29 2016 12:43:31 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:43:31 GMT+0100 (Mitteleuropäische Zeit) Job Done 0
+Fri Jan 29 2016 12:44:24 GMT+0100 (Mitteleuropäische Zeit) Adding 200 plate(s) success
+Fri Jan 29 2016 12:44:28 GMT+0100 (Mitteleuropäische Zeit) Adding 200 plate(s) success
+Fri Jan 29 2016 12:45:03 GMT+0100 (Mitteleuropäische Zeit) Adding 20 plate(s) success
+Fri Jan 29 2016 12:45:08 GMT+0100 (Mitteleuropäische Zeit) Adding 200 plate(s) success
+Fri Jan 29 2016 12:50:11 GMT+0100 (Mitteleuropäische Zeit) INFO: Job sent successfully
+Fri Jan 29 2016 12:50:14 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:14 GMT+0100 (Mitteleuropäische Zeit) Job Submitted 0
+Fri Jan 29 2016 12:50:17 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:17 GMT+0100 (Mitteleuropäische Zeit) Job Started 0
+Fri Jan 29 2016 12:50:20 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:20 GMT+0100 (Mitteleuropäische Zeit) Loading 0
+Fri Jan 29 2016 12:50:23 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:23 GMT+0100 (Mitteleuropäische Zeit) Moving to printer 0
+Fri Jan 29 2016 12:50:25 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:25 GMT+0100 (Mitteleuropäische Zeit) Printing 0
+Fri Jan 29 2016 12:50:27 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:27 GMT+0100 (Mitteleuropäische Zeit) Printing 1
+Fri Jan 29 2016 12:50:29 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:29 GMT+0100 (Mitteleuropäische Zeit) Printing 2
+Fri Jan 29 2016 12:50:31 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:31 GMT+0100 (Mitteleuropäische Zeit) Printing 3
+Fri Jan 29 2016 12:50:33 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:33 GMT+0100 (Mitteleuropäische Zeit) Printing 4
+Fri Jan 29 2016 12:50:35 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:35 GMT+0100 (Mitteleuropäische Zeit) Printing 5
+Fri Jan 29 2016 12:50:37 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:37 GMT+0100 (Mitteleuropäische Zeit) Printing 6
+Fri Jan 29 2016 12:50:39 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:39 GMT+0100 (Mitteleuropäische Zeit) Printing 7
+Fri Jan 29 2016 12:50:42 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:41 GMT+0100 (Mitteleuropäische Zeit) Printing 8
+Fri Jan 29 2016 12:50:44 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:44 GMT+0100 (Mitteleuropäische Zeit) Printing 9
+Fri Jan 29 2016 12:50:46 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:46 GMT+0100 (Mitteleuropäische Zeit) Printing 10
+Fri Jan 29 2016 12:50:46 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:50:46 GMT+0100 (Mitteleuropäische Zeit) Brick is not picked up by the printer head from the bricks warehouse 10
+Fri Jan 29 2016 12:50:48 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:50:48 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the plate (still in the head). 10
+Fri Jan 29 2016 12:50:50 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:50:50 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the correct position on the plate 10
+Fri Jan 29 2016 12:50:54 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:54 GMT+0100 (Mitteleuropäische Zeit) Printing 11
+Fri Jan 29 2016 12:50:56 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:56 GMT+0100 (Mitteleuropäische Zeit) Printing 12
+Fri Jan 29 2016 12:50:58 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:50:58 GMT+0100 (Mitteleuropäische Zeit) Printing 13
+Fri Jan 29 2016 12:51:00 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:00 GMT+0100 (Mitteleuropäische Zeit) Printing 14
+Fri Jan 29 2016 12:51:02 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:02 GMT+0100 (Mitteleuropäische Zeit) Printing 15
+Fri Jan 29 2016 12:51:04 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:04 GMT+0100 (Mitteleuropäische Zeit) Printing 16
+Fri Jan 29 2016 12:51:06 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:06 GMT+0100 (Mitteleuropäische Zeit) Printing 17
+Fri Jan 29 2016 12:51:08 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:08 GMT+0100 (Mitteleuropäische Zeit) Printing 18
+Fri Jan 29 2016 12:51:10 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:10 GMT+0100 (Mitteleuropäische Zeit) Printing 19
+Fri Jan 29 2016 12:51:12 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:12 GMT+0100 (Mitteleuropäische Zeit) Printing 20
+Fri Jan 29 2016 12:51:12 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:51:12 GMT+0100 (Mitteleuropäische Zeit) Brick is not picked up by the printer head from the bricks warehouse 20
+Fri Jan 29 2016 12:51:14 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:51:14 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the plate (still in the head). 20
+Fri Jan 29 2016 12:51:16 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:51:16 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the correct position on the plate 20
+Fri Jan 29 2016 12:51:20 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:20 GMT+0100 (Mitteleuropäische Zeit) Printing 21
+Fri Jan 29 2016 12:51:22 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:22 GMT+0100 (Mitteleuropäische Zeit) Printing 22
+Fri Jan 29 2016 12:51:24 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:24 GMT+0100 (Mitteleuropäische Zeit) Printing 23
+Fri Jan 29 2016 12:51:26 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:26 GMT+0100 (Mitteleuropäische Zeit) Printing 24
+Fri Jan 29 2016 12:51:29 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:29 GMT+0100 (Mitteleuropäische Zeit) Moving to delivery warehouse 0
+Fri Jan 29 2016 12:51:32 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:32 GMT+0100 (Mitteleuropäische Zeit) Unloading 0
+Fri Jan 29 2016 12:51:35 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:51:35 GMT+0100 (Mitteleuropäische Zeit) Job Done 0
+Fri Jan 29 2016 12:53:27 GMT+0100 (Mitteleuropäische Zeit) INFO: Job sent successfully
+Fri Jan 29 2016 12:53:30 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:30 GMT+0100 (Mitteleuropäische Zeit) Job Submitted 0
+Fri Jan 29 2016 12:53:33 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:33 GMT+0100 (Mitteleuropäische Zeit) Job Started 0
+Fri Jan 29 2016 12:53:36 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:36 GMT+0100 (Mitteleuropäische Zeit) Loading 0
+Fri Jan 29 2016 12:53:39 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:39 GMT+0100 (Mitteleuropäische Zeit) Moving to printer 0
+Fri Jan 29 2016 12:53:41 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:41 GMT+0100 (Mitteleuropäische Zeit) Printing 0
+Fri Jan 29 2016 12:53:43 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:43 GMT+0100 (Mitteleuropäische Zeit) Printing 1
+Fri Jan 29 2016 12:53:45 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:45 GMT+0100 (Mitteleuropäische Zeit) Printing 2
+Fri Jan 29 2016 12:53:47 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:47 GMT+0100 (Mitteleuropäische Zeit) Printing 3
+Fri Jan 29 2016 12:53:49 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:49 GMT+0100 (Mitteleuropäische Zeit) Printing 4
+Fri Jan 29 2016 12:53:51 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:51 GMT+0100 (Mitteleuropäische Zeit) Printing 5
+Fri Jan 29 2016 12:53:53 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:53 GMT+0100 (Mitteleuropäische Zeit) Printing 6
+Fri Jan 29 2016 12:53:55 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:55 GMT+0100 (Mitteleuropäische Zeit) Printing 7
+Fri Jan 29 2016 12:53:57 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:57 GMT+0100 (Mitteleuropäische Zeit) Printing 8
+Fri Jan 29 2016 12:53:59 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:53:59 GMT+0100 (Mitteleuropäische Zeit) Printing 9
+Fri Jan 29 2016 12:54:01 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:01 GMT+0100 (Mitteleuropäische Zeit) Printing 10
+Fri Jan 29 2016 12:54:01 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:54:01 GMT+0100 (Mitteleuropäische Zeit) Brick is not picked up by the printer head from the bricks warehouse 10
+Fri Jan 29 2016 12:54:03 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:54:03 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the plate (still in the head). 10
+Fri Jan 29 2016 12:54:05 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:54:05 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the correct position on the plate 10
+Fri Jan 29 2016 12:54:09 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:09 GMT+0100 (Mitteleuropäische Zeit) Printing 11
+Fri Jan 29 2016 12:54:11 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:11 GMT+0100 (Mitteleuropäische Zeit) Printing 12
+Fri Jan 29 2016 12:54:13 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:13 GMT+0100 (Mitteleuropäische Zeit) Printing 13
+Fri Jan 29 2016 12:54:15 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:15 GMT+0100 (Mitteleuropäische Zeit) Printing 14
+Fri Jan 29 2016 12:54:17 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:17 GMT+0100 (Mitteleuropäische Zeit) Printing 15
+Fri Jan 29 2016 12:54:19 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:19 GMT+0100 (Mitteleuropäische Zeit) Printing 16
+Fri Jan 29 2016 12:54:21 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:21 GMT+0100 (Mitteleuropäische Zeit) Printing 17
+Fri Jan 29 2016 12:54:23 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:23 GMT+0100 (Mitteleuropäische Zeit) Printing 18
+Fri Jan 29 2016 12:54:25 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:25 GMT+0100 (Mitteleuropäische Zeit) Printing 19
+Fri Jan 29 2016 12:54:27 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:27 GMT+0100 (Mitteleuropäische Zeit) Printing 20
+Fri Jan 29 2016 12:54:27 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:54:27 GMT+0100 (Mitteleuropäische Zeit) Brick is not picked up by the printer head from the bricks warehouse 20
+Fri Jan 29 2016 12:54:29 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:54:29 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the plate (still in the head). 20
+Fri Jan 29 2016 12:54:31 GMT+0100 (Mitteleuropäische Zeit) ERROR: Fri Jan 29 2016 12:54:31 GMT+0100 (Mitteleuropäische Zeit) Brick is not plugged to the correct position on the plate 20
+Fri Jan 29 2016 12:54:35 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:35 GMT+0100 (Mitteleuropäische Zeit) Printing 21
+Fri Jan 29 2016 12:54:37 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:37 GMT+0100 (Mitteleuropäische Zeit) Printing 22
+Fri Jan 29 2016 12:54:39 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:39 GMT+0100 (Mitteleuropäische Zeit) Printing 23
+Fri Jan 29 2016 12:54:41 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:41 GMT+0100 (Mitteleuropäische Zeit) Printing 24
+Fri Jan 29 2016 12:54:44 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:44 GMT+0100 (Mitteleuropäische Zeit) Moving to delivery warehouse 0
+Fri Jan 29 2016 12:54:47 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:47 GMT+0100 (Mitteleuropäische Zeit) Unloading 0
+Fri Jan 29 2016 12:54:50 GMT+0100 (Mitteleuropäische Zeit) INFO: Fri Jan 29 2016 12:54:50 GMT+0100 (Mitteleuropäische Zeit) Job Done 0
