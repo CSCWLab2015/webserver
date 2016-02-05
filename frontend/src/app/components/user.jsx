@@ -42,7 +42,8 @@ let User = React.createClass({
     var statusSection ="";
     var errorMessage = "Unspecified Error!";
     var response = this.state.letterDetails;
-    var status = this.state.status, statusMessage;
+    var status = this.state.status, statusMessage,
+    textDisabled = true;
 
     if (this.state.loginStatus.role == 'maintainer') this.context.router.transitionTo('/admin');
 
@@ -64,6 +65,7 @@ let User = React.createClass({
     ); 
 
     if (status.method) {
+      textDisabled = true;
       statusMessage = status.method;
       if (status.code.substring(0, 1) == "9") {
         statusMessage = "ERROR: " + statusMessage;
@@ -77,6 +79,8 @@ let User = React.createClass({
     }
 
     if (response.done) {
+      textDisabled = false;
+      this.refs.letter.disabled = false;
       image ="";
     }
 
@@ -94,7 +98,7 @@ let User = React.createClass({
           <div style={{textAlign: 'center'}}>
           <Paper className="loginWrapper">
             <form autoComplete="off" onSubmit={this._handleSubmit}>
-            <TextField style={textFieldStyle} ref="letter" floatingLabelText="Enter a Letter" />
+            <TextField style={textFieldStyle} ref="letter" disabled={textDisabled} floatingLabelText="Enter a Letter" />
             <br />
             <div style={{textAlign: 'center'}}>
             <RaisedButton label="Submit" type="submit" primary={true} />

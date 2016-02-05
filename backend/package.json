@@ -1,14 +1,11 @@
 {
-  "name": "node-mysql",
-  "version": "0.0.1",
+  "name": "cscw-lego-backend",
+  "version": "1.0.0",
   "dependencies": {
     "express": "^4.10.6",
     "mysql": "^2.5.4",
     "lodash": "~3.10.1",
     "body-parser": "~1.14.1",
-    "bluetooth-serial-port": "~1.2.6",
-    "util": "~0.10.3",
-    "node-nxt": "0.0.1",
-    "request": "~2.67.0"
+    "util": "~0.10.3"
   }
 }
