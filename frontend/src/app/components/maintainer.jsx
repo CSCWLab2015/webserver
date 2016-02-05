@@ -47,7 +47,7 @@ let Login = React.createClass({
 
 
       $(document).ready(function() {
-        $("body").css("background-color", "#444F5C");
+        $("body").css("background-color", "#202021");
       });
 
       // console.log(this.state.resDetails);
@@ -100,8 +100,6 @@ let Login = React.createClass({
           <Snackbar ref="errorAlert" message={errorMessage} style={{top: '16px', backgroundColor: 'darkred'}}autoHideDuration={5000}/>
           <Snackbar ref="addSuccess" message={successMessage} style={{top: '16px'}} autoHideDuration={5000}/>
           <div style={{textAlign: 'center'}}>
-          <img src="./logo_light.png" alt="getcontext" width="120px" />
-           <h3 style={{color: '#ECEFF1'}}>{"Maintainer's Page"}</h3>
           <Paper className="loginWrapper">
             <h3>Adding Inventory</h3>
             <form autoComplete="off" onSubmit={this._handleSubmit}>

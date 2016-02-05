@@ -39,7 +39,7 @@ let Login = React.createClass({
 
   render() {
       $(document).ready(function() {
-      $("body").css("background-color", "#444F5C");
+      $("body").css("background-color", "#202021");
   });
 
     if (this.state.loginStatus.role == 'user') this.context.router.transitionTo('/user');

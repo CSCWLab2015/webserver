@@ -51,8 +51,8 @@ let Main = React.createClass({
   componentWillMount() {
     // if (!this.state.loginStatus) this.context.router.transitionTo('/login');
     ThemeManager.setPalette({
-      primary1Color: Colors.grey800,
-      accent1Color: Colors.lightBlue500
+      primary1Color: Colors.grey900,
+      accent1Color: Colors.greenA700
     });
   },
 

@@ -28,7 +28,7 @@ var currentSearchXhr;
 
 var errorMessage = { error: "Unable to connect to API Server"}
 
-var host="http://10.223.90.122:8080";
+var host="http://10.223.90.124:8080";
 
 module.exports = {
 

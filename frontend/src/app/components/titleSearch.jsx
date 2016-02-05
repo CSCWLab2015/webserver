@@ -38,18 +38,25 @@ let TitleSearch = React.createClass({
       ];
 
     var loggedinNav = (<div></div>);
+    var role = "undefined", title="Creator";
 
-    var role = "undefined";
     if (this.state.loginStatus.role) role = this.state.loginStatus.role;
-
-
     var profile = (<DropDownIcon openDirection='bottom-left' onChange={this._onUserClick} className='logoutButton' menuItems={menuList} ><Avatar>{role.charAt(0)}</Avatar></DropDownIcon>
            );
+
+    if (role == "maintainer") title = "Maintainer";
+
     if (this.state.loginStatus.status ) loggedinNav = (
           <div className="grid headerGrid" >
+            <div className="col" style={{padding: '0px', width: '10px', position: 'absolute'}}>    
+              <img src="./logo_light.png" alt="getcontext" width="30px" />
+            </div>
+            <div className="col" style={{padding: '0px', paddingLeft: '20px'}}>
+              <h3 className="pageTitle">{title + " Page"}</h3>
+            </div>
             <div className="col" style={{padding: '0px'}}>
-            {profile}
-               </div>
+              {profile}
+            </div>
           </div>);
 
     var advLabel = 'Advanced';

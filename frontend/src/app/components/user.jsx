@@ -42,12 +42,12 @@ let User = React.createClass({
     var statusSection ="";
     var errorMessage = "Unspecified Error!";
     var response = this.state.letterDetails;
-    var status = this.state.status;
+    var status = this.state.status, statusMessage;
 
     if (this.state.loginStatus.role == 'maintainer') this.context.router.transitionTo('/admin');
 
     $(document).ready(function() {
-      $("body").css("background-color", "#444F5C");
+      $("body").css("background-color", "#202021");
     });
 
     if (this.state.inputError) errorMessage = this.state.inputError;
@@ -63,12 +63,18 @@ let User = React.createClass({
       </div>
     ); 
 
-    if (status.method) statusSection = (
-      <div>
-        <p style={{marginTop: '40px', fontSize: '20px', fontWeight: '600'}}>Status:</p>
-        <p style={{marginTop: '5px', fontSize: '16px'}}>{status.method}</p>
-      </div>
-    );
+    if (status.method) {
+      statusMessage = status.method;
+      if (status.code.substring(0, 1) == "9") {
+        statusMessage = "ERROR: " + statusMessage;
+      }
+      statusSection = (
+        <div>
+          <p style={{marginTop: '40px', fontSize: '20px', fontWeight: '600'}}>Status:</p>
+          <p style={{marginTop: '5px', fontSize: '16px'}}>{statusMessage}</p>
+        </div>
+      );
+    }
 
     if (response.done) {
       image ="";
@@ -86,8 +92,6 @@ let User = React.createClass({
         <div className="landingWrapper">
           <Snackbar ref="errorAlert" message={errorMessage} style={{top: '16px', backgroundColor: 'darkred'}}autoHideDuration={5000}/>
           <div style={{textAlign: 'center'}}>
-          <img src="./logo_light.png" alt="getcontext" width="120px" />
-           <h3 style={{color: '#ECEFF1'}}>{"Letter Creation Page"}</h3>
           <Paper className="loginWrapper">
             <form autoComplete="off" onSubmit={this._handleSubmit}>
             <TextField style={textFieldStyle} ref="letter" floatingLabelText="Enter a Letter" />

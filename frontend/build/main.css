@@ -174,7 +174,7 @@ th {
 }*/
 
 .topBar > div {
-  background-color: #444F5C !important;
+  background-color: #202021 !important;
 }
 
 .hoverStyle:hover {
@@ -322,156 +322,13 @@ th {
   /*border-radius: 4px;*/
 }
 
-.companyLogo{
-  width: 200px;
-
+.pageTitle{
+  margin: 0px;
+  padding-left: 20px;
+  padding-top: 2px;
+  font-weight: 300;
+  color: white;
 }
-
-.emailText {
-      width: 25% !important;
-      color: #686868; 
-}
-
-.invalidResponse{
-  top: 16px;
-  background-color: #8B0000 !important;
-}
-
-.gridWrapper{
-  width: 80%; 
-  margin-left: auto;
-  margin-right: auto; 
-  padding: 30px;
-}
-
-.investorsList{
-  /*margin-top: -8px;*/
-}
-
-.investorsList span{
-  font-size: 16px;
-}
-
-.teamName {
-  width: 25%;
-  vertical-align: middle !important; 
-  padding: 0 !important;
-  padding-left: 5px !important;
-}
-
-.teamIcon{
-  margin-top: 1px !important;
-  padding: 0px !important;
-}
-
-
-.teamRole {
-  vertical-align: middle !important;
-  padding: 0 !important;
-  padding-left: 5px !important;
-}
-
-.teamSocial {
-  width: 30%; 
-  padding: 0; 
-  padding-left: 5px;
-}
-
-.fundingDate{
-  width: 15%;
-}
-
-.fundingName{
-   width: 45%;
-}
-
-.fundingTotal{
-  text-align: right;
-}
-
-.fundingAmountHeader{
-  text-align: right;
-}
-
-.investeesWrapper {
-  padding-bottom: 10px; 
-  padding-top: 10px;
-} 
-
-footer {
-  text-align:center;
-  margin-top: 80px;
-  margin-bottom: 50px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.footerStatic {
-  position: static;
-  margin-top: 80px;
-  margin-bottom: 0px;
-}
-
-.footerStatic p {
-  color: gray;
-  margin-top: 10px;
-}
-
-.advancedMenu{
-  border-bottom: 1px solid #F0F0F0;
-  display: block;
-  overflow: hidden;
-  text-align: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-
-.advancedButton{
-  min-width: 250px !important;
-}
-
-.advancedDialog {
-  padding-top:0px;
-}
-
-.advancedDialog h4{
-  color: #757575;
-}
-
-.chartCard {
-  margin-bottom: 20px;
-}
-
-/*.col div{
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 0px 0px rgba(0, 0, 0, 0) !important;
-}*/
-
-/*::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-}
-::-webkit-scrollbar-track {
-  background-color: rgba(113,112,107,0.1);
-  -webkit-border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:vertical {
-  background-color: rgba(0,0,0,.2);
-  -webkit-border-radius: 6px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,0,0,.2);
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: #969696;
-}
-
-::-webkit-scrollbar-thumb:horizontal {
-  background-color: rgba(0,0,0,.2);
-  -webkit-border-radius: 6px;
-}*/
 .materialIcons{
   position: absolute !important; 
   left: 230px; 
@@ -518,7 +375,7 @@ footer {
 }
 
 .loginWrapper{
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 2em;
   width: 500px;
   margin-left: auto;
