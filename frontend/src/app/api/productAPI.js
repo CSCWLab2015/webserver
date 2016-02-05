@@ -26,7 +26,7 @@ var currentXhr;
 var currentXhrFP;
 var currentSearchXhr;
 
-var errorMessage = { error: "Unable to connect to API Server"}
+var errorMessage = { error: "Unable to connect to Backend"}
 
 var host="http://10.223.90.124:8080";
 
@@ -53,6 +53,10 @@ module.exports = {
 			    	if (xhr.responseText){
 				    	var error = JSON.parse(xhr.responseText);
 				        ProductActions.receiveUser(error);
+				    }
+				    else {
+				    	ProductActions.receiveUser(errorMessage);
+				    	console.log(errorMessage);
 				    }
 			    }
 			}

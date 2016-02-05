@@ -301,26 +301,26 @@ app.get("/plates",function(req,res){
 
 app.get("/arstatus",function(req,res){
 
-  // var code = 0,
-  //     arstatus = {
-  //       "status": "waiting",
-  //       "letter": "",
-  //       "index": -1,
-  //       "error": code
-  //     };
+  var code = 0,
+      arstatus = {
+        "status": "waiting",
+        "letter": "",
+        "index": -1,
+        "error": code
+      };
 
 
-  // if (RESPONSE) {
-  //     if (RESPONSE.code.substring(0, 1) == "8")  code = 0;
-  //     arstatus = {
-  //       "status": STATUS[RESPONSE.code].info,
-  //       "letter": LETTER,
-  //       "index": RESPONSE.payload,
-  //       "error": parseInt(code, 10)
-  //     }
-  // }
+  if (RESPONSE) {
+      if (RESPONSE.code.substring(0, 1) == "8")  code = 0;
+      arstatus = {
+        "status": STATUS[RESPONSE.code].info,
+        "letter": LETTER,
+        "index": RESPONSE.payload,
+        "error": parseInt(code, 10)
+      }
+  }
 
-  res.send(arResponse);
+  res.send(arstatus);
 });
 
 

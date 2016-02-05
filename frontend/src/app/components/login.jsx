@@ -34,7 +34,6 @@ let Login = React.createClass({
   _rerender() {
     this.setState({userDetails: DataStore.getUser(), loginStatus: DataStore.getLogin(), loading: 'none'});
     if (this.state.userDetails.error) this.refs.errorAlert.show();
-    if (this.state.userDetails.confirmation_email_code) this.refs.signupSuccess.show();
   },
 
   render() {

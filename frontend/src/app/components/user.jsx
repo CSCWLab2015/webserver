@@ -18,6 +18,7 @@ let User = React.createClass({
       letterDetails: {},
       status: {},
       done: false,
+      textDisabled: false,
       loginStatus: DataStore.getLogin()
     }
   },
@@ -43,7 +44,7 @@ let User = React.createClass({
     var errorMessage = "Unspecified Error!";
     var response = this.state.letterDetails;
     var status = this.state.status, statusMessage,
-    textDisabled = true;
+    textDisabled = this.state.textDisabled;
 
     if (this.state.loginStatus.role == 'maintainer') this.context.router.transitionTo('/admin');
 
@@ -65,7 +66,6 @@ let User = React.createClass({
     ); 
 
     if (status.method) {
-      textDisabled = true;
       statusMessage = status.method;
       if (status.code.substring(0, 1) == "9") {
         statusMessage = "ERROR: " + statusMessage;
@@ -80,7 +80,6 @@ let User = React.createClass({
 
     if (response.done) {
       textDisabled = false;
-      this.refs.letter.disabled = false;
       image ="";
     }
 
@@ -122,9 +121,10 @@ let User = React.createClass({
 
   _handleSubmit(e) {
     e.preventDefault();
+    this.setState({textDisabled: true});
     var letter = this.refs.letter.getValue();
-    if (letter.length > 1 || !letter.match(/[a-z]/i)) {
-      this.setState({inputError: "Please enter ONE letter only..."});
+    if (letter.length > 1 || !letter.match(/[a-zA-Z0-9]/i)) {
+      this.setState({inputError: "Please enter ONE alphanumeric only..."});
       this.refs.errorAlert.show();
       return;
     }
