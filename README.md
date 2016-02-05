@@ -1,10 +1,12 @@
 # Webserver for Industry 4.0 Lego printer
 
 There are two parts in the webserver
+
 1. Frontend: Handle the visualization and interactivity between user and the system
 2. Backend: Handle the logic and also the interface with the bluetooth router module
 
 To run the webserver, please follow this steps.
+
 1. Make sure to have the latest `npm` and `node` version installed in the computer. And also mysql server is installed and running.
 2. Run `npm install` in both `backend` directory.
 3. Restore the database from `db` directory to mysql server.
