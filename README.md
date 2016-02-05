@@ -26,4 +26,4 @@ username: admin
 password: admin
 ```
 
-For more detailed authentication, please visit the (wiki of webserver)[https://github.com/CSCWLab2015/webserver/wiki]
+For more detailed authentication, please visit the [wiki of webserver](https://github.com/CSCWLab2015/webserver/wiki)
