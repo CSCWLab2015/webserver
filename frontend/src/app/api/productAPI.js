@@ -1,10 +1,10 @@
 "use strict"
-let ProductActions = require('../actions/productActions');
-let http = require("http");
-let $ = require("jquery");
-let _ = require("lodash");
-let sha1 = require('sha1');
-let xhr = new XMLHttpRequest();
+var ProductActions = require('../actions/productActions');
+var http = require("http");
+var $ = require("jquery");
+var _ = require("lodash");
+var sha1 = require('sha1');
+var xhr = new XMLHttpRequest();
 
 function createCORSRequest(method, url) {
   var xhr = new XMLHttpRequest();
@@ -22,13 +22,9 @@ function createCORSRequest(method, url) {
   return xhr;
 }
 
-var currentXhr;
-var currentXhrFP;
-var currentSearchXhr;
-
 var errorMessage = { error: "Unable to connect to Backend"}
 
-var host="http://10.223.90.124:8080";
+var host="http://localhost:8080";
 
 module.exports = {
 
@@ -56,7 +52,6 @@ module.exports = {
 				    }
 				    else {
 				    	ProductActions.receiveUser(errorMessage);
-				    	console.log(errorMessage);
 				    }
 			    }
 			}
@@ -78,7 +73,6 @@ module.exports = {
 			    if(xhr.status == 200) {
 			    	if (xhr.responseText){
 				    	var result = JSON.parse(xhr.responseText);
-				    	console.log(result);
 				        module.exports.getRes(result);
 				    }
 			    }

@@ -1,17 +1,17 @@
-let React = require('react');
-let mui = require('material-ui');
-let Router = require('react-router'); 
-let $ = require('jquery');
+var React = require('react');
+var mui = require('material-ui');
+var Router = require('react-router'); 
+var $ = require('jquery');
 //Backend
-let DataStore = require('../stores/dataStore');
+var DataStore = require('../stores/dataStore');
 //React Components
-let ProductAPI = require('../api/productAPI');
+var ProductAPI = require('../api/productAPI');
 
-let {
+var {
   TextField, Paper, RaisedButton, Snackbar, DropDownMenu
 } = mui;
 
-let Login = React.createClass({
+var Login = React.createClass({
 
   getInitialState () {
     return { 
@@ -60,7 +60,7 @@ let Login = React.createClass({
     if (this.state.resDetails){
     if (this.state.resDetails.message) successMessage = this.state.resDetails.message;
     var list = [];
-    for (let i = 0, len=this.state.resDetails.length; i<len; i++){
+    for (var i = 0, len=this.state.resDetails.length; i<len; i++){
           list.push(<tr key={i+12345}>
                 <td >
                   <b>{this.state.resDetails[i].name}</b>
@@ -86,12 +86,12 @@ let Login = React.createClass({
 
       var image ="";
 
-     let menuItems = [
+     var menuItems = [
    { payload: '1', text: 'brick' },
    { payload: '2', text: 'plate' },
 ];
 
-    let textFieldStyle = {
+    var textFieldStyle = {
       width: '25%',
     };
 

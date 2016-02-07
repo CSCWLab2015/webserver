@@ -1,17 +1,17 @@
-let React = require('react');
-let mui = require('material-ui');
-let Router = require('react-router'); 
-let $ = require('jquery');
+var React = require('react');
+var mui = require('material-ui');
+var Router = require('react-router'); 
+var $ = require('jquery');
 //Backend
-let DataStore = require('../stores/dataStore');
+var DataStore = require('../stores/dataStore');
 //React Components
-let ProductAPI = require('../api/productAPI');
+var ProductAPI = require('../api/productAPI');
 
-let {
+var {
   TextField, Paper, RaisedButton, Snackbar, CircularProgress,
 } = mui;
 
-let User = React.createClass({
+var User = React.createClass({
 
   getInitialState () {
     return { 
@@ -38,44 +38,68 @@ let User = React.createClass({
   },
 
   render() {
-    var returnVar = (<div></div>);
-    var image ="";
-    var statusSection ="";
-    var errorMessage = "Unspecified Error!";
-    var response = this.state.letterDetails;
-    var status = this.state.status, statusMessage,
-    textDisabled = this.state.textDisabled;
 
-    if (this.state.loginStatus.role == 'maintainer') this.context.router.transitionTo('/admin');
+    var returnVar = (<div></div>),
+        image ="",
+        colorCode = "",
+        statusSection ="",
+        statusPayload = "",
+        errorMessage = "Unspecified Error!",
+        response = this.state.letterDetails,
+        status = this.state.status, statusMessage, 
+        textDisabled = this.state.textDisabled,
+        response = this.state.letterDetails;
+
 
     $(document).ready(function() {
       $("body").css("background-color", "#202021");
     });
 
-    if (this.state.inputError) errorMessage = this.state.inputError;
-    
-    var response = this.state.letterDetails;
-    
-    if (response.error) errorMessage = response.error;
+    if (this.state.loginStatus.role == 'maintainer') this.context.router.transitionTo('/admin');
 
-    if (response.urlImage) image = (
-      <div>
-        <p style={{marginTop: '40px', fontSize: '12px'}}>Your request is being processed, here is the expected result</p>
-        <img src={response.urlImage} alt="getcontext" width="200px" />
-      </div>
-    ); 
+    if (this.state.inputError) {
+      errorMessage = this.state.inputError;
+    }
+    
+    if (response.error) {
+      errorMessage = response.error;
+    }
+
+    if (response.urlImage) {
+      
+        image = (
+          <div>
+            <p style={{marginTop: '40px', fontSize: '12px'}}>Your request is being processed, here is the expected result</p>
+            <img src={response.urlImage} alt="getcontext" width="200px" />
+          </div>
+        );
+    } 
 
     if (status.method) {
+      
       statusMessage = status.method;
+
+      if (status.payload > 0) {
+        statusPayload = Math.round(((Number(status.payload)+1)/25)*100) + " %";
+      }
+
       if (status.code.substring(0, 1) == "9") {
         statusMessage = "ERROR: " + statusMessage;
       }
+
+      if (status.barcode) {
+        colorCode       = status.barcode;
+      }
+
       statusSection = (
         <div>
-          <p style={{marginTop: '40px', fontSize: '20px', fontWeight: '600'}}>Status:</p>
-          <p style={{marginTop: '5px', fontSize: '16px'}}>{statusMessage}</p>
+          {colorCode}
+          <p style={{marginTop: '40px', fontSize: '16px', fontWeight: '600'}}>Status:</p>
+          <p style={{marginTop: '5px', fontSize: '20px'}}>{statusMessage}</p>
+		      <p style={{marginTop: '5px', fontSize: '16px'}}>{statusPayload}</p>
         </div>
       );
+    
     }
 
     if (response.done) {
@@ -83,7 +107,7 @@ let User = React.createClass({
       image ="";
     }
 
-    let textFieldStyle = {
+    var textFieldStyle = {
       display: 'block', 
       width: '70%',
       marginLeft: 'auto',
@@ -91,43 +115,51 @@ let User = React.createClass({
       color: '#686868' 
     };
 
-    if (this.state.loginStatus.role == 'user') returnVar = (
-        <div className="landingWrapper">
-          <Snackbar ref="errorAlert" message={errorMessage} style={{top: '16px', backgroundColor: 'darkred'}}autoHideDuration={5000}/>
-          <div style={{textAlign: 'center'}}>
-          <Paper className="loginWrapper">
-            <form autoComplete="off" onSubmit={this._handleSubmit}>
-            <TextField style={textFieldStyle} ref="letter" disabled={textDisabled} floatingLabelText="Enter a Letter" />
-            <br />
+    if (this.state.loginStatus.role == 'user') { 
+
+        returnVar = (
+          <div className="landingWrapper">
+            <Snackbar ref="errorAlert" message={errorMessage} style={{top: '16px', backgroundColor: 'darkred'}}autoHideDuration={5000}/>
             <div style={{textAlign: 'center'}}>
-            <RaisedButton label="Submit" type="submit" primary={true} />
+            <Paper className="loginWrapper">
+              <form autoComplete="off" onSubmit={this._handleSubmit}>
+              <TextField style={textFieldStyle} ref="letter" disabled={textDisabled} floatingLabelText="Enter a Letter" />
+              <br />
+              <div style={{textAlign: 'center'}}>
+              <RaisedButton label="Submit" type="submit" primary={true} />
+              <br />
+              {image}
+              {statusSection}
+              </div>
+              </form>
+            </Paper>
             <br />
-            {image}
-            {statusSection}
             </div>
-            </form>
-          </Paper>
-          <br />
+
+            <br />
+            <br />
+
           </div>
+        );
 
-          <br />
-          <br />
-
-        </div>
-      );
+      }
 
       return returnVar;
   },
 
   _handleSubmit(e) {
+    var letter;
     e.preventDefault();
+    
     this.setState({textDisabled: true});
-    var letter = this.refs.letter.getValue();
+    
+    letter = this.refs.letter.getValue();
     if (letter.length > 1 || !letter.match(/[a-zA-Z0-9]/i)) {
       this.setState({inputError: "Please enter ONE alphanumeric only..."});
       this.refs.errorAlert.show();
       return;
     }
+
     ProductAPI.getLetter(letter);
     this.refs.letter.blur();
   }

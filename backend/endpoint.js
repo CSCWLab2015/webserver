@@ -3,104 +3,21 @@ var express     = require("express"),
     _           = require("lodash"),
     bodyParser  = require("body-parser"),
     http        = require("http"),
+    fs          = require('fs'),
+    util        = require('util'),
     letters     = require("./json/letters.json"),
-    arstatus     = require("./json/status.json");
-
-var options = {
-  host: 'localhost',
-  port: '9090',
-  path: '/job',
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  }
-};
-
-var connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : 'root',
-    database : 'lego',
-    multipleStatements: true
-  });
-
-var STATUS = {
-    800:  {
-            info: "status",
-            message: "Status"
-          },
-    801: {
-          info: "waiting",
-          message: "Job Submitted"
-          },
-    802: {
-          info: "waiting",
-          message: "Job Started"
-          },
-    803: {
-          info: "waiting",
-          message: "Job Done, please check the plate..."
-          },
-    810: {
-          info: "printing",
-          message: "Printing"
-          },
-    820: {
-          info: "waiting",
-          message: "Moving to printer"
-          },
-    821: {
-          info: "waiting",
-          message: "Moving to delivery warehouse"
-          },
-    830: {
-          info: "waiting",
-          message: "Loading"
-          },
-    831: {
-          info: "waiting",
-          message: "Unloading"
-          },
-    901: {
-          info: "error",
-          message: "Bluetooth communication error"
-          },
-    902: {
-          info: "error",
-          message: "Job could not be started"
-          },
-    910: {
-          info: "error",
-          message: "Brick is not available in the ware house to be used in printing"
-          },
-    911: {
-          info: "error",
-          message: "Brick is not picked up by the printer head from the bricks warehouse"
-          },
-    912: {
-          info: "error",
-          message: "Brick is not plugged to the plate (still in the head)."
-          },
-    913: {
-          info: "error",
-          message: "Brick is not plugged to the correct position on the plate"
-          }
-};
-
-var ROUTER = {
-  host: "http://10.223.90.122:9090",
-  job: "/job",
-  status: "/status"
-}
-
-var arResponse, RESPONSE, LETTER ="";
-var app = express();
-
-
-var fs = require('fs');
-var util = require('util');
-var log_file = fs.createWriteStream(__dirname + '/debug.log', {flags : 'a'});
-var log_stdout = process.stdout;
+    arstatus    = require("./json/status.json"),
+    config      = require("./json/config.json"),
+    options     = config["routerOptions"],
+    STATUS      = config["responseStatus"],
+    connection  = mysql.createConnection(config["mysqlOptions"]),
+    arResponse, 
+    RESPONSE, 
+    barcode,
+    LETTER      = "",
+    app         = express(),
+    log_file    = fs.createWriteStream(__dirname + '/debug.log', {flags : 'a'}),
+    log_stdout  = process.stdout;
 
 console.log = function(d) { //
   var today = new Date().toString();
@@ -108,12 +25,16 @@ console.log = function(d) { //
   log_stdout.write(util.format(d) + '\n');
 };
 
-var i =0;
-
-setInterval(function(){
-  arResponse = arstatus[i%29];
-  i++;
-  }, 2500);
+///////////////////////////
+//
+// Dummy for AR test server
+//
+///////////////////////////
+// var i =0;
+// setInterval(function(){
+//   arResponse = arstatus[i%29];
+//   i++;
+//   }, 2500);
 
 
 ////////////////////////////
@@ -126,6 +47,7 @@ connection.connect(function(err){
 if(!err) {
     console.log("INFO: Database is connected ...");  
 } else {
+	console.log(err);
     console.log("Error connecting database ... \n\n");  
 }
 });
@@ -267,15 +189,21 @@ app.post("/login",function(req,res){
 });
 
 app.post("/status",function(req,res){
-    var method = req.body.method.toString();
-    var payload = req.body.payload;
-    var timestamp = Math.round(req.body.time/1000000);
+    var method = req.body.method.toString(),
+        payload = req.body.payload,
+        timestamp = Math.round(req.body.time/1000000);
+
+    if (method.indexOf("832")) {
+        barcode = payload;
+        payload = 0;
+    }
 
     RESPONSE = {
       "code" : method,
       "method": STATUS[method].message,
       "payload": payload,
-      "timestamp": timestamp
+      "timestamp": timestamp,
+      "barcode": barcode
     };
 
     timestamp = new Date(timestamp).toString();

@@ -1,16 +1,16 @@
-let AppDispatcher = require('../dispatcher/appDispatcher');
-let EventEmitter = require('events').EventEmitter;
-let ProductConstants = require('../constants/productConstants');
-let _ = require('underscore');
-let cookie = require('react-cookie');
+var AppDispatcher = require('../dispatcher/appDispatcher');
+var EventEmitter = require('events').EventEmitter;
+var ProductConstants = require('../constants/productConstants');
+var _ = require('underscore');
+var cookie = require('react-cookie');
 
 
 // Define initial data points
-let _product = {};
-let _tag = {};
-let _status = {};
-let _location = {};
-let _user = {};
+var _product = {};
+var _tag = {};
+var _status = {};
+var _location = {};
+var _user = {};
 
 // Method to load product data from mock API
 function loadProductData(data) {
@@ -35,7 +35,7 @@ function loadUser(data) {
 }
 
 // Extend ProductStore with EventEmitter to add eventing capabilities
-let ProductStore = _.extend({}, EventEmitter.prototype, {
+var ProductStore = _.extend({}, EventEmitter.prototype, {
 
   // Return Product data
   getProduct: function() {
@@ -86,8 +86,8 @@ let ProductStore = _.extend({}, EventEmitter.prototype, {
 
 // Register callback with AppDispatcher
 AppDispatcher.register(function(payload) {
-  let action = payload.action;
-  let text;
+  var action = payload.action;
+  var text;
 
   switch(action.actionType) {
 

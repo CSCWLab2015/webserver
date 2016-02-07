@@ -1,0 +1,84 @@
+{
+	"routerOptions": {
+	  "host": "localhost",
+	  "port": "9090",
+	  "path": "/job",
+	  "method": "POST",
+	  "headers": {
+	    "Content-Type": "application/json"
+	    }
+    },
+	"mysqlOptions": {
+	    "host"     : "localhost",
+	    "user"     : "root",
+	    "password" : "root",
+	    "database" : "lego",
+	    "multipleStatements": true
+	},
+	"responseStatus": {
+	    "800":  {
+	            "info": "status",
+	            "message": "Status"
+	          },
+	    "801": {
+	          "info": "waiting",
+	          "message": "Job Submitted"
+	          },
+	    "802": {
+	          "info": "waiting",
+	          "message": "Job Started"
+	          },
+	    "803": {
+	          "info": "waiting",
+	          "message": "Job Done, please check the plate..."
+	          },
+	    "810": {
+	          "info": "printing",
+	          "message": "Printing..."
+	          },
+	    "820": {
+	          "info": "waiting",
+	          "message": "Moving to printer"
+	          },
+	    "821": {
+	          "info": "waiting",
+	          "message": "Moving to delivery warehouse"
+	          },
+	    "830": {
+	          "info": "waiting",
+	          "message": "Loading"
+	          },
+	    "831": {
+	          "info": "waiting",
+	          "message": "Unloading"
+	          },
+	  	"832": {
+	          "info": "printing",
+	          "message": "Getting barcode..."
+	          },
+	    "901": {
+	          "info": "error",
+	          "message": "Bluetooth communication error"
+	          },
+	    "902": {
+	          "info": "error",
+	          "message": "Job could not be started"
+	          },
+	    "910": {
+	          "info": "error",
+	          "message": "Brick is not available in the ware house to be used in printing"
+	          },
+	    "911": {
+	          "info": "error",
+	          "message": "Brick is not picked up by the printer head from the bricks warehouse"
+	          },
+	    "912": {
+	          "info": "error",
+	          "message": "Brick is not plugged to the plate (still in the head)."
+	          },
+	    "913": {
+	          "info": "error",
+	          "message": "Brick is not plugged to the correct position on the plate"
+	          }
+	}
+}

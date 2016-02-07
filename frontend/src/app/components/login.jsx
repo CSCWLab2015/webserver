@@ -1,17 +1,17 @@
-let React = require('react');
-let mui = require('material-ui');
-let Router = require('react-router'); 
-let $ = require('jquery');
+var React = require('react');
+var mui = require('material-ui');
+var Router = require('react-router'); 
+var $ = require('jquery');
 //Backend
-let DataStore = require('../stores/dataStore');
+var DataStore = require('../stores/dataStore');
 //React Components
-let ProductAPI = require('../api/productAPI');
+var ProductAPI = require('../api/productAPI');
 
-let {
+var {
   TextField, Paper, RaisedButton, Snackbar, CircularProgress,
 } = mui;
 
-let Login = React.createClass({
+var Login = React.createClass({
 
   getInitialState () {
     return { 
@@ -37,9 +37,9 @@ let Login = React.createClass({
   },
 
   render() {
-      $(document).ready(function() {
+    $(document).ready(function() {
       $("body").css("background-color", "#202021");
-  });
+    });
 
     if (this.state.loginStatus.role == 'user') this.context.router.transitionTo('/user');
     if (this.state.loginStatus.role == 'maintainer') this.context.router.transitionTo('/admin');
@@ -50,7 +50,7 @@ let Login = React.createClass({
     if (this.props.query.email) emailValue = this.props.query.email;
     if (this.state.userDetails.error) errorMessage = this.state.userDetails.error;
 
-    let textFieldStyle = {
+    var textFieldStyle = {
       display: 'block', 
       width: '70%',
       marginLeft: 'auto',

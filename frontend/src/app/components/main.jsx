@@ -1,27 +1,27 @@
 "use strict"
 //Important Modules
-let React = require('react');
-let Router = require('react-router');  
-let { DefaultRoute, Link, Route, RouteHandler } = Router;
+var React = require('react');
+var Router = require('react-router');  
+var { DefaultRoute, Link, Route, RouteHandler } = Router;
 //Material UI
-let mui = require('material-ui');
-let ThemeManager = new mui.Styles.ThemeManager();
-let Colors = mui.Styles.Colors;
-let {FlatButton, LeftNav,AppBar,TextField,Styles,FontIcon,MenuItem,Paper,RaisedButton, Snackbar, IconButton, Dialog} = mui;
+var mui = require('material-ui');
+var ThemeManager = new mui.Styles.ThemeManager();
+var Colors = mui.Styles.Colors;
+var {FlatButton, LeftNav,AppBar,TextField,Styles,FontIcon,MenuItem,Paper,RaisedButton, Snackbar, IconButton, Dialog} = mui;
 //Backend
-let DataStore = require('../stores/dataStore');
+var DataStore = require('../stores/dataStore');
 //React Components
-let ProductAPI = require('../api/productAPI');
+var ProductAPI = require('../api/productAPI');
 
 
-let TitleSearch = require('./titleSearch.jsx');
+var TitleSearch = require('./titleSearch.jsx');
 
 function validateEmail(email) {
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return re.test(email);
 }
 
-let Main = React.createClass({
+var Main = React.createClass({
 
   getInitialState () {
     return { 
@@ -71,7 +71,7 @@ let Main = React.createClass({
 
     if (!this.state.loginStatus) this.context.router.transitionTo('/login');
 
-    let standardActions = [
+    var standardActions = [
       { text: 'Cancel' },
       { text: 'Submit', onTouchTap: this._onDialogSubmit, ref: 'submit'}
     ];

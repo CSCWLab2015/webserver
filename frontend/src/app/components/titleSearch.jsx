@@ -1,16 +1,16 @@
-let React = require('react');
-let mui = require('material-ui');
-let Router = require('react-router');  
-let _ = require('lodash'); 
-let { DefaultRoute, Link, Route, RouteHandler } = Router;
-let ProductAPI = require('../api/productAPI');
-let DataStore = require('../stores/dataStore');
+var React = require('react');
+var mui = require('material-ui');
+var Router = require('react-router');  
+var _ = require('lodash'); 
+var { DefaultRoute, Link, Route, RouteHandler } = Router;
+var ProductAPI = require('../api/productAPI');
+var DataStore = require('../stores/dataStore');
 
-let {
+var {
   TextField, RaisedButton, SelectField, DropDownIcon, Avatar
 } = mui;
 
-let TitleSearch = React.createClass({
+var TitleSearch = React.createClass({
 
   getInitialState () {
     return { 

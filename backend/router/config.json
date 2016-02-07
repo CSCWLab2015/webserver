@@ -7,19 +7,19 @@
 		"printer" : {
 			"device_id": 1,
 			"bluetooth_name": "NXT_1",
-			"bluetooth_port": "COM13",
+			"bluetooth_port": "COM10",
 			"program_name": "printer.rxe"
 		},
 		"conveyor" : {
 			"device_id": 2,
 			"bluetooth_name": "NXT_2",
-			"bluetooth_port": "COM8",
+			"bluetooth_port": "COM13",
 			"program_name": "conveyor.rxe"
 		},
 		"loader" : {
 			"device_id": 3,
 			"bluetooth_name": "NXT_3",
-			"bluetooth_port": "COM17",
+			"bluetooth_port": "COM15",
 			"program_name": "loader.rxe"
 		}
 	},

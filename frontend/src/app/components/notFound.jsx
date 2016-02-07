@@ -1,12 +1,12 @@
-let React = require('react');
-let mui = require('material-ui');
-let DataStore = require('../stores/dataStore');
+var React = require('react');
+var mui = require('material-ui');
+var DataStore = require('../stores/dataStore');
 
-let {
+var {
   TextField, Paper, RaisedButton
 } = mui;
 
-let NotFound = React.createClass({
+var NotFound = React.createClass({
 
   getInitialState: function () {
     return { 
