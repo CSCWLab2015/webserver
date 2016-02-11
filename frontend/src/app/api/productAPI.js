@@ -147,7 +147,7 @@ module.exports = {
 	},
 
 	getStatus: function(payload) {
-		setInterval(function(){
+		var interval = setInterval(function(){
 
 	    	var url = host+"/status";
 
@@ -158,7 +158,10 @@ module.exports = {
 			    	if (xhr.responseText){
 				    	var result = JSON.parse(xhr.responseText);
 				    	ProductActions.receiveStatus(result);
-				    	if (result.code == 803) ProductActions.receiveProduct({done: true});
+				    	if (result.code == 803) {
+				    		ProductActions.receiveProduct({done: true});
+				    		clearInterval(interval);
+				    	}
 				    }
 			    }
 			    else {

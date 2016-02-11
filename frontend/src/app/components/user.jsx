@@ -6,6 +6,7 @@ var $ = require('jquery');
 var DataStore = require('../stores/dataStore');
 //React Components
 var ProductAPI = require('../api/productAPI');
+var color = require('./color.json')
 
 var {
   TextField, Paper, RaisedButton, Snackbar, CircularProgress,
@@ -24,7 +25,6 @@ var User = React.createClass({
   },
 
   componentDidMount () {
-    ProductAPI.getStatus();
     DataStore.addChangeListener(this._rerender);
   },
 
@@ -48,8 +48,8 @@ var User = React.createClass({
         response = this.state.letterDetails,
         status = this.state.status, statusMessage, 
         textDisabled = this.state.textDisabled,
-        response = this.state.letterDetails;
-
+        response = this.state.letterDetails,
+        colorString;
 
     $(document).ready(function() {
       $("body").css("background-color", "#202021");
@@ -70,7 +70,7 @@ var User = React.createClass({
         image = (
           <div>
             <p style={{marginTop: '40px', fontSize: '12px'}}>Your request is being processed, here is the expected result</p>
-            <img src={response.urlImage} alt="getcontext" width="200px" />
+            <img src={response.urlImage} alt="letter" width="200px" />
           </div>
         );
     } 
@@ -88,7 +88,14 @@ var User = React.createClass({
       }
 
       if (status.barcode) {
-        colorCode       = status.barcode;
+        colorString = status.barcode.toString();
+        colorCode = (
+          <div>
+          <div className="colorCode" style={{backgroundColor:color[colorString[0]]}}></div>
+          <div className="colorCode" style={{backgroundColor:color[colorString[1]]}}></div>
+          <div className="colorCode" style={{backgroundColor:color[colorString[2]]}}></div>
+          </div>
+        );
       }
 
       statusSection = (
@@ -104,7 +111,10 @@ var User = React.createClass({
 
     if (response.done) {
       textDisabled = false;
-      image ="";
+      image =(
+        <div>
+          <p style={{marginTop: '40px', fontSize: '12px'}}>Your request is done, you can request letter again</p>
+        </div>);
     }
 
     var textFieldStyle = {
@@ -162,6 +172,7 @@ var User = React.createClass({
 
     ProductAPI.getLetter(letter);
     this.refs.letter.blur();
+    ProductAPI.getStatus();
   }
 
 });

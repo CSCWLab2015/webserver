@@ -7,7 +7,7 @@ var express     = require("express"),
     util        = require('util'),
     letters     = require("./json/letters.json"),
     arstatus    = require("./json/status.json"),
-    config      = require("./json/config.json"),
+    config      = require("./json/backend.json"),
     options     = config["routerOptions"],
     STATUS      = config["responseStatus"],
     connection  = mysql.createConnection(config["mysqlOptions"]),
@@ -20,9 +20,18 @@ var express     = require("express"),
     log_stdout  = process.stdout;
 
 console.log = function(d) { //
-  var today = new Date().toString();
-  log_file.write(today + " " + util.format(d) + '\n');
-  log_stdout.write(util.format(d) + '\n');
+  var today = new Date(),
+      dd = today.getDate(),
+      mm = today.getMonth() + 1,
+      yy = today.getFullYear(),
+      h  = today.getHours(),
+      min = today.getMinutes(),
+      sec = today.getSeconds(),
+      todayString = dd+"/"+mm+"/"+yy+" - "+ h+":"+min+":"+sec;
+  
+  log_file.write(todayString + " " + util.format(d) + '\n');
+  log_stdout.write(todayString + " " + util.format(d) + '\n');
+
 };
 
 ///////////////////////////
@@ -193,7 +202,7 @@ app.post("/status",function(req,res){
         payload = req.body.payload,
         timestamp = Math.round(req.body.time/1000000);
 
-    if (method.indexOf("832")) {
+    if (method == "832" ) {
         barcode = payload;
         payload = 0;
     }
@@ -203,13 +212,14 @@ app.post("/status",function(req,res){
       "method": STATUS[method].message,
       "payload": payload,
       "timestamp": timestamp,
+      "letter"  : LETTER,
       "barcode": barcode
     };
 
     timestamp = new Date(timestamp).toString();
 
-    if (method.substring(0, 1) == "9") console.log("ERROR: " + timestamp + " " + STATUS[method].message + " " + payload);
-    else console.log("INFO: " + timestamp + " " + STATUS[method].message + " " + payload);
+    if (method.substring(0, 1) == "9") console.log("ERROR: " + STATUS[method].message + " " + payload);
+    else console.log("INFO: " + STATUS[method].message + " " + payload);
 
     res.send(STATUS[method]);
 });
@@ -239,13 +249,18 @@ app.get("/arstatus",function(req,res){
 
 
   if (RESPONSE) {
-      if (RESPONSE.code.substring(0, 1) == "8")  code = 0;
+      if (RESPONSE.code) {
+          if (RESPONSE.code.substring(0, 1) == "9") {
+            code = RESPONSE.code;
+          }
+
       arstatus = {
         "status": STATUS[RESPONSE.code].info,
         "letter": LETTER,
         "index": RESPONSE.payload,
         "error": parseInt(code, 10)
       }
+    }
   }
 
   res.send(arstatus);

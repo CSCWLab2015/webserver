@@ -98,7 +98,7 @@ var Login = React.createClass({
     if (this.state.loginStatus.role == 'maintainer') returnVar = (
         <div className="landingWrapper">
           <Snackbar ref="errorAlert" message={errorMessage} style={{top: '16px', backgroundColor: 'darkred'}}autoHideDuration={5000}/>
-          <Snackbar ref="addSuccess" message={successMessage} style={{top: '16px'}} autoHideDuration={5000}/>
+          <Snackbar ref="addSuccess" message={successMessage} style={{top: '16px', backgroundColor: '#13b4ff'}} autoHideDuration={5000}/>
           <div style={{textAlign: 'center'}}>
           <Paper className="loginWrapper">
             <h3>Adding Inventory</h3>
