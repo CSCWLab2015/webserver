@@ -24,7 +24,7 @@ function createCORSRequest(method, url) {
 
 var errorMessage = { error: "Unable to connect to Backend"}
 
-var host="http://localhost:8080";
+var host="http://10.223.90.151:8080";
 
 module.exports = {
 

@@ -136,7 +136,7 @@ var User = React.createClass({
               <TextField style={textFieldStyle} ref="letter" disabled={textDisabled} floatingLabelText="Enter a Letter" />
               <br />
               <div style={{textAlign: 'center'}}>
-              <RaisedButton label="Submit" type="submit" primary={true} />
+              <RaisedButton label="Submit" type="submit" primary={true} disabled={textDisabled} />
               <br />
               {image}
               {statusSection}

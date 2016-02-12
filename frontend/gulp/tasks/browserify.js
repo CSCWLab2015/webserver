@@ -19,6 +19,7 @@ var babelify     = require('babelify');
 
 gulp.task('browserify', function(callback) {
 
+
   var bundleQueue = config.bundleConfigs.length;
 
   var browserifyThis = function(bundleConfig) {

@@ -140,11 +140,11 @@ var Login = React.createClass({
     e.preventDefault();
 
     var amount = this.refs.amount.getValue();
-    if (isNaN(amount) || parseInt(amount) < 1) {
-      this.setState({inputError: "Please enter POSITIVE NUMBER only..."});
-      this.refs.errorAlert.show();
-      return;
-    }
+    // if (isNaN(amount) || parseInt(amount) < 1) {
+    //   this.setState({inputError: "Please enter POSITIVE NUMBER only..."});
+    //   this.refs.errorAlert.show();
+    //   return;
+    // }
     var details = {
       "type" : this.state.resType,
       "amount" : amount
